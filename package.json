@@ -1,0 +1,21 @@
+{
+  "name": "assorted-5etools-homebrew",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test-json-brew"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.4.1",
+  "devDependencies": {
+    "5etools-utils": "^0.13.19",
+    "@eslint/json": "^0.12.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "prettier": "3.5.3",
+    "prettier-plugin-multiline-arrays": "^4.0.3"
+  }
+}

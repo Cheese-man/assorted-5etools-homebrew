@@ -1,0 +1,5 @@
+**/spells/*.json
+package.json
+pnpm-lock.yaml
+README.md
+**/andreya/psychic-crush.json
