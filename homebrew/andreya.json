@@ -594,6 +594,8 @@
                 "absorb elements|xge",
                 "accelerate/decelerate|valdaplayerpack",
                 "acid splash|xphb",
+                "aid|xphb",
+                "air bubble|aag",
                 "alarm|xphb",
                 "antilife shell|xphb",
                 "antimagic field|xphb",
@@ -601,12 +603,17 @@
                 "awaken|xphb",
                 "bane|xphb",
                 "banishment|xphb",
-                "beast bond|xphb",
+                "barkskin|xphb",
+                "beast bond|xge",
+                "beast sense|xphb",
                 "become plant|andreya",
+                "befuddlement|xphb",
                 "bestow curse|xphb",
                 "blade barrier|xphb",
                 "blight|xphb",
+                "blindness/deafness|xphb",
                 "bones of the earth|xge",
+                "borrowed knowledge|scc",
                 "call lightning|xphb",
                 "chaotic ward|andreya",
                 "charm monster|xphb",
@@ -630,6 +637,7 @@
                 "create bonfire|xge",
                 "create or destroy water|xphb",
                 "cure wounds|xphb",
+                "darkvision|xphb",
                 "daylight|xphb",
                 "death ward|xphb",
                 "delay|valdaplayerpack",
@@ -641,19 +649,23 @@
                 "divine word|xphb",
                 "dominate monster|xphb",
                 "dream of the blue veil|tce",
+                "dust devil|xge",
                 "earth tremor|xge",
+                "earthbind|xge",
                 "earthquake|xphb",
                 "elemental bane|xge",
                 "encode thoughts|ggr",
+                "enhance ability|xphb",
                 "erupting earth|xge",
                 "etherealness|xphb",
                 "eyebite|xphb",
                 "fast friends|ai",
-                "befuddlement|xphb",
                 "feign death|xphb",
                 "find the path|xphb",
+                "find traps|xphb",
                 "fire storm|xphb",
                 "flame arrows|xge",
+                "flaming sphere|xphb",
                 "flesh to stone|xphb",
                 "fog cloud|xphb",
                 "foresight|xphb",
@@ -663,6 +675,7 @@
                 "friends|xphb",
                 "frostbite|xge",
                 "geas|xphb",
+                "gentle repose|xphb",
                 "giant insect|xphb",
                 "globe of invulnerability|xphb",
                 "glyph of warding|xphb",
@@ -672,12 +685,15 @@
                 "guardian of nature|xge",
                 "guidance|xphb",
                 "gust|xge",
+                "gust of wind|xphb",
                 "hallow|xphb",
                 "hallucinatory terrain|xphb",
                 "harm|xphb",
                 "heal|xphb",
                 "healing word|xphb",
+                "healing spirit|xge",
                 "heroes' feast|xphb",
+                "hold person|xphb",
                 "holy weapon|xge",
                 "ice knife|xphb",
                 "ice storm|xphb",
@@ -689,9 +705,12 @@
                 "investiture of stone|xge",
                 "investiture of wind|xge",
                 "legend lore|xphb",
+                "lesser restoration|xphb",
                 "light|xphb",
                 "lightning arrow|xphb",
+                "locate animals or plants|xphb",
                 "locate creature|xphb",
+                "locate object|xphb",
                 "longstrider|xphb",
                 "maddening darkness|xphb",
                 "magic circle|xphb",
@@ -705,6 +724,7 @@
                 "message|xphb",
                 "mind blank|xphb",
                 "mind sliver|tce",
+                "mind spike|xphb",
                 "minor illusion|xphb",
                 "mirage arcane|xphb",
                 "moment to think|valdaplayerpack",
@@ -712,7 +732,9 @@
                 "motivational speech|ai",
                 "move earth|xphb",
                 "nondetection|xphb",
+                "pass without trace|xphb",
                 "paradox|valdaplayerpack",
+                "phantasmal force|xphb",
                 "phantasmal killer|xphb",
                 "planar binding|xphb",
                 "plane shift|xphb",
@@ -729,6 +751,8 @@
                 "produce flame|xphb",
                 "protection from energy|xphb",
                 "protection from evil and good|xphb",
+                "protection from poison|xphb",
+                "spike growth|xge",
                 "psionic hold|andreya",
                 "psychic crush|andreya",
                 "psychic scream|xge",
@@ -751,6 +775,8 @@
                 "sequester|xphb",
                 "shape water|xge",
                 "shillelagh|xphb",
+                "silence|xphb",
+                "skywrite|xge",
                 "sleet storm|xphb",
                 "snare|xge",
                 "spare the dying|xphb",
@@ -768,6 +794,7 @@
                 "symbol|xphb",
                 "synaptic static|xphb",
                 "tasha's otherworldly guise|tce",
+                "tasha's mind whip|tce",
                 "telepathy|xphb",
                 "teleport|xphb",
                 "temple of the gods|xge",
@@ -790,6 +817,7 @@
                 "wall of stone|xphb",
                 "wall of thorns|xphb",
                 "wall of water|xge",
+                "warding wind|xge",
                 "water breathing|xphb",
                 "water walk|xphb",
                 "watery sphere|xge",
@@ -798,7 +826,8 @@
                 "wind walk|xphb",
                 "wind wall|xphb",
                 "word of radiance|xphb",
-                "wrath of nature|xge"
+                "wrath of nature|xge",
+                "zone of truth|xphb"
             ]
         }
     ],
@@ -2182,20 +2211,8 @@
             "subclassSource": "Andreya",
             "level": 14,
             "entries": [
-                {
-                    "type": "homebrew",
-                    "entries": [
-                        "TODO",
-                        {
-                            "type": "list",
-                            "items": [
-                                "Is the sphere centred on self? If not, what are the limits (how far away? do you need to see the point?)"
-                            ]
-                        }
-                    ]
-                },
                 "You can passively using illusions to disguise the movements of your mouth. You can now cast any illusion spells without completing the verbal component.",
-                "Additionally, you are now able to create a mass dream and enrapture a large group. As an action, all creatures that you choose to affect within a 150ft sphere must make an Intelligence save equal to your spell save DC, or be left in a dreamy stupor, seeing a blissful or nostalgic image. Any creatures who fail the save are {@condition incapacitated|XPHB} for up to 10 minutes. You must {@status concentration|xphb|concentrate} on this effect. If you lose concentration, or an affected creature is damaged or shaken awake with an action, they snap out of this state and are no longer incapacitated. You can create a mass dream in this way once per {@variantrule long rest|xphb}."
+                "Additionally, you are now able to create a mass dream and enrapture a large group. As an action, all creatures that you choose to affect within a 150ft sphere (centred on yourself) must make an Intelligence save equal to your spell save DC, or be left in a dreamy stupor, seeing a blissful or nostalgic image. Any creatures who fail the save are {@condition incapacitated|XPHB} for up to 10 minutes. You must {@status concentration|xphb|concentrate} on this effect. If you lose concentration, or an affected creature is damaged or shaken awake with an action, they snap out of this state and are no longer incapacitated. You can create a mass dream in this way once per {@variantrule long rest|xphb}."
             ]
         },
         {
@@ -2294,21 +2311,7 @@
             "subclassSource": "Andreya",
             "level": 3,
             "entries": [
-                {
-                    "type": "homebrew",
-                    "entries": [
-                        "TODO",
-                        {
-                            "type": "list",
-                            "items": [
-                                "Clarify: Can salves only be made from spells with an action/BA casting time?",
-                                "IF NO: if reaction spells can be made into salves, can those salves be drunk/thrown/used as reactions?",
-                                "IF NO: if spells with more than an action casting time can be made into salves, are there any extra rules about how long it takes to use those salves?"
-                            ]
-                        }
-                    ]
-                },
-                "At the end of a {@variantrule long rest|xphb}, you can infuse a vial of water on your person with the effects of a spell. You must use two spell slots of appropriate level for a spell to be able to make infused with that spell.",
+                "At the end of a {@variantrule long rest|xphb}, you can infuse a vial of water on your person with the effects of a spell with a casting time of one action or one bonus action. You must use two spell slots of appropriate level for a spell to be able to make infused with that spell.",
                 "When you make a salve, the type of salve it is depends on the effects of the spell. There are 3 types of salves: Enriching, Destructive and Tempestuous.",
                 {
                     "type": "list",
@@ -2337,7 +2340,7 @@
                         }
                     ]
                 },
-                "Once crafted, this salve can be drunk by yourself as a {@action bonus action}, fed to an ally as an action, or thrown at a target. Salves are considered as a thrown weapon that you are proficient in, and you may use your Intelligence modifier for the ranged attack roll.",
+                "Once crafted, this salve can be drunk by yourself as a {@action bonus action}, fed to an ally as an action, or thrown at a target using the {@action Attack action|XPHB}. Salves are considered as a thrown weapon that you are proficient in, and you may use your Intelligence modifier for the ranged attack roll.",
                 "If a salve thrown in this way is infused with a spell would normally require a spell attack roll immediately upon casting, then the ranged attack roll to throw the salve is used for the spell attack roll. If this attack misses, then the salve and spell effect within are wasted.",
                 "Salves that are infused with spells that require {@status concentration|xphb} still require concentration to maintain their effects when the salve is used. If the salve was consumed, whoever drank it must maintain concentration. If it was thrown, whoever threw it must maintain concentration.",
                 {
@@ -2359,22 +2362,10 @@
             "subclassSource": "Andreya",
             "level": 6,
             "entries": [
-                {
-                    "type": "homebrew",
-                    "entries": [
-                        "TODO",
-                        {
-                            "type": "list",
-                            "items": [
-                                "D2: Written with old sleep in mind, might need revision (e.g. make it use old sleep/effects of old sleep, or replace that roll in the table entirely)"
-                            ]
-                        }
-                    ]
-                },
                 "When using your {@subclassFeature Spell Cocktail|Thaumaturge|Andreya|Salvemaker|Andreya|3} feature, you can choose to throw in a little extra.",
                 "When you create the salve, roll a {@dice d6} to determine the additional effect from either the Enriching, Destructive or Tempestuous effect tables, depending on the spell. This increases to a d8 at level 10 and then a d10 at level 14, with additional effects becoming possible at these levels.",
                 "The extra effect is considered part of the infused spell. If the extra effect requires {@status concentration|XPHB}, then the infused spell now requires concentration for its duration, and losing concentration causes all effects to fade.",
-                "If the additional affect applies to a single target of the spell, but the spell affects multiple targets, choose one of the spell's targets to be impacted by the additional effect. 'You' refers to the user of the salve (whether that's you or one of your allies), unless specified otherwise.",
+                "If the additional affect applies to a single target of the spell, but the spell affects multiple targets, choose one of the spell's targets to be impacted by the additional effect.",
                 {
                     "type": "table",
                     "caption": "Enriching",
@@ -2439,7 +2430,7 @@
                         ],
                         [
                             "2",
-                            "You cast {@spell Sleep|XPHB} centred on yourself, at the same level as the spell infused into the salve."
+                            "You cast {@spell Sleep|XPHB}, centred on the target, after the original spell has been cast."
                         ],
                         [
                             "3",
@@ -2536,22 +2527,9 @@
             "subclassSource": "Andreya",
             "level": 6,
             "entries": [
-                {
-                    "type": "homebrew",
-                    "entries": [
-                        "TODO",
-                        {
-                            "type": "list",
-                            "items": [
-                                "Can allies also throw salves as attacks? If yes, are they proficient? or is it an improvised weapon attack?",
-                                "If yes, split clarifying paragraph in {@subclassFeature Extra Spice|Thaumaturge|Andreya|Salvemaker|Andreya|6} and attach relevant parts to this feature"
-                            ]
-                        }
-                    ]
-                },
                 "When you roll any ability check to identify a tincture, potion or other liquid substance, you may add twice your proficiency to the roll.",
                 "Additionally, when you use your {@subclassFeature Extra Spice|Thaumaturge|Andreya|Salvemaker|Andreya|6} feature, you now roll twice on the relevant table and pick which roll to use. If you roll the same effect twice, you are stuck with that effect.",
-                "You can throw your salves to allies within 30ft, with no roll required. Passing them a salve in this way is considered interacting with an object."
+                "Finally, your salves are now stable enough to be safely handled by people other than you. You can throw your salves to allies within 30ft, with no roll required. Passing them a salve in this way is considered interacting with an object. They can also throw a salve passed in this way by making a ranged spell attack using their Intelligence modifier. Any effects from the {@subclassFeature Extra Spice|Thaumaturge|Andreya|Salvemaker|Andreya|6} that affect 'you' affect the ally who used the salve."
             ]
         },
         {
