@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "1.3.0",
+                "version": "1.4.0",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1748090311421,
+        "dateLastModified": 1748099043726,
         "edition": "one",
         "spellSchools": {
             "DM": {
@@ -1494,16 +1494,27 @@
             "className": "Barbarian",
             "classSource": "XPHB",
             "subclassFeatures": [
-                "Leap of Anger|Barbarian|XPHB|High Wind|Andreya|3",
+                "Path of the High Wind|Barbarian|XPHB|High Wind|Andreya|3",
                 "Whirling Thrust|Barbarian|XPHB|High Wind|Andreya|6",
                 "Nimble Landing|Barbarian|XPHB|High Wind|Andreya|10",
                 "Sky Shatter|Barbarian|XPHB|High Wind|Andreya|14"
             ],
-            "fluff": {
-                "entries": [
-                    "Some Barbarians seek to use the sky as an arena to meet their ends. Those who walk the Path of the High Wind harness energy from the elemental plane of air to fuel the primal bloodlust born from rage. Derived from the ancient teachings of the Dragoon warriors, these barbarians are capable of unrivalled acrobatic ability, leaping into the sky with furious intent - that intent indeed being of a violent nature."
-                ]
-            }
+            "subclassSpells": [
+                "prestidigitation|xphb",
+                "gust of wind|xphb"
+            ],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "prestidigitation|xphb"
+                        ],
+                        "6": [
+                            "gust of wind|xphb"
+                        ]
+                    }
+                }
+            ]
         },
         {
             "name": "Oath of the Scalebearers",
@@ -2863,6 +2874,22 @@
                 "Once per long rest, when you use your {@subclassFeature Tempest Arcane|Thaumaturge|Andreya|Elemental Scion|Andreya|6} feature or your {@subclassFeature Combined Elements|Thaumaturge|Andreya|Elemental Scion|Andreya|6}, you may choose an additonal effect from their respective tables, subject to the original requirements of each. You cannot choose the same effect twice.",
                 "After you have used this feature, you may use it again before you next complete a long rest by expending two uses of the feature at a time.",
                 "Additionally, when you cast {@spell Investiture of Flame|XGE}, {@spell Investiture of Ice|XGE}, {@spell Investiture of Stone|XGE} or {@spell Investiture of Wind|XGE}, you do not need to concentrate on the spell."
+            ]
+        },
+        {
+            "name": "Path of the High Wind",
+            "source": "Andreya",
+            "className": "Barbarian",
+            "classSource": "XPHB",
+            "subclassShortName": "High Wind",
+            "subclassSource": "Andreya",
+            "level": 3,
+            "entries": [
+                "Some barbarians seek to use the sky as an arena to meet their ends. Those who walk the Path of the High Wind harness energy from the elemental plane of air to fuel the primal bloodlust born from rage. Derived from the ancient teachings of the Dragoon warriors, these barbarians are capable of unrivalled acrobatic ability, leaping into the sky with furious intent - that intent indeed being of a violent nature.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Leap of Anger|Barbarian|XPHB|High Wind|Andreya|3"
+                }
             ]
         },
         {
