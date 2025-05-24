@@ -3093,7 +3093,7 @@
             "classSource": "BH2022",
             "level": 3,
             "entries": [
-                "TODO",
+                "The Order of the Cryptid is the most secret of the blood hunter orders, its members dedicating their lives to finding terrifying monsters of myth and dispatching them. Cryptid hunters seek out and study obscure knowledge of these beings, and obsessively attempt to harness it, taking on attributes of the very beings they seek to destroy. These resilient blood hunters stay occupied with folktale and myth, applying their obscure knowledge to written records of history and religious sects, for fear that without a breakthrough soon, they may become the very monsters they seek.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Monstrous Boon|Blood Hunter|BH2022|Cryptid|Andreya|3"
@@ -3113,7 +3113,40 @@
             "classSource": "BH2022",
             "level": 3,
             "entries": [
-                "TODO"
+                "At 3rd level, you gain a monstrous boon from a cryptid from the list below. Optionally, you may also gain minor physical attributes that are reminiscent of the cryptid. For example, if you have a Tempest Monstrous Boon, you might grow feathers in your hair and have pale white eyes, or if your boon is of Leviathan, your skin may be slimy to the touch.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Frost Worm",
+                            "entries": [
+                                "A chill comes over you, the monster from your nightmares being aware of your presence. You gain {@variantrule resistance|XPHB} to cold damage."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Leviathan",
+                            "entries": [
+                                "You receive a blessing from the deep. You gain {@variantrule resistance|XPHB} to acid and poison damage."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Tempest",
+                            "entries": [
+                                "The spirit of storms acts as your guide. You gain {@variantrule resistance|XPHB} to lightning damage."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Yeenoghu",
+                            "entries": [
+                                "Part of Yeenoghu's demonic essence tethers itself to your very soul. You gain {@variantrule resistance|XPHB} to fire damage."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -3125,7 +3158,7 @@
             "classSource": "BH2022",
             "level": 3,
             "entries": [
-                "TODO"
+                "Starting at 3rd level, you learn to master tracking all kinds of creatures. Any {@skill Survival} checks you make to track a creature are made with advantage."
             ]
         },
         {
@@ -3137,7 +3170,40 @@
             "classSource": "BH2022",
             "level": 7,
             "entries": [
-                "TODO"
+                "At 7th level, you gain a magical benefit based on a cryptid of your choice. You can choose the same cryptid you selected at 3rd level, or a different one.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Frost Worm",
+                            "entries": [
+                                "As you look to the mountains and wonder what lies within, you feel your physiology warp. You gain a burrow speed of 30ft, and 10ft of {@sense blindsight|xphb}."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Leviathan",
+                            "entries": [
+                                "The depths beckon you forth, something urging you to join it down there. You gain a swim speed of 30ft. In addition, any melee attacks you make underwater are no longer made at disadvantage."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Tempest",
+                            "entries": [
+                                "A singular white feathered wing sprouts from your back, imparting you with the gifts of the sky. You gain a fly speed of 30ft and {@variantrule immunity|XPHB} to damage from non-magical weather effects."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Yeenoghu",
+                            "entries": [
+                                "The blinding speed of Yeenoghu is imparted unto you. You can now dash as a bonus action. Additionally, you gain advantage on saving throws against becoming {@condition poisoned|XPHB}."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -3149,7 +3215,40 @@
             "classSource": "BH2022",
             "level": 11,
             "entries": [
-                "TODO"
+                "At 11th level, you gain a magical benefit based on a cryptid of your choice. You can choose the same cryptid you selected previously, or a different one.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Frost Worm",
+                            "entries": [
+                                "The harsh conditions of the tundra have given you supernatural physical prowess. You gain advantage on {@skill Athletics} and {@skill Acrobatics} checks."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Leviathan",
+                            "entries": [
+                                "The darkness of the murky depths clings to your being, allowing you to almost fade out of existence to the untrained eye. You gain advantage on {@skill Stealth} checks."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Tempest",
+                            "entries": [
+                                "The sky welcomes you as its own, granting gifts to entice you to stay for eternity. You gain 60ft of {@sense darkvision} and can see in magical darkness. Additionally, you have advantage on saving throws against the {@condition stunned|XPHB} condition."
+                            ]
+                        },
+                        {
+                            "type": "item",
+                            "name": "Yeenoghu",
+                            "entries": [
+                                "The abyssal fracture in your mind whispers its secrets to you, imparting gifts of knowledge. You gain the ability to speak, read and understand all languages. Additionally, you gain 90ft of {@variantrule telepathy|xphb}."
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -3161,7 +3260,7 @@
             "classSource": "BH2022",
             "level": 15,
             "entries": [
-                "TODO"
+                "Starting at 15th level, your desire to sunder monsters from the world has empowered you. You may attack an enemy afflicted with your {@classFeature Brand of Castigation|Blood Hunter|BH2022|6} an additional time when you take the attack action."
             ]
         },
         {
@@ -3173,7 +3272,7 @@
             "classSource": "BH2022",
             "level": 18,
             "entries": [
-                "TODO"
+                "At 18th level, you hone your hemocraft to keep yourself alive at all costs. You gain the {@optfeature Blood Curse of the Transmuter|Andreya} for your {@classFeature Blood Maledict|Blood Hunter|BH2022|1} feature. This doesn't count against your number of blood curses known."
             ]
         },
         {
@@ -3185,7 +3284,7 @@
             "classSource": "BH2022",
             "level": 3,
             "entries": [
-                "TODO",
+                "The Order of the Planeswalker is the most scattered of the blood hunter orders, its founders having honed their hemocraft abilities to traverse the bounds of the planes. In particular, Planeswalkers seek to master the manipulation of the Weave from both the plane of ultimate emotion, the Feywilds and the plane of suppression of self, the Shadowfell, imparting boons and banes to survive the harsh lifestyle that comes with this order's creed.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Planar Step|Blood Hunter|BH2022|Planeswalker|Andreya|3"
@@ -3205,7 +3304,8 @@
             "classSource": "BH2022",
             "level": 3,
             "entries": [
-                "TODO"
+                "When you join this order at 3rd level, you gain the ability to create tiny rifts between the planes, allowing you to displace yourself in a localised area. As an action, you create a number of spheres of magical darkness equal to your hemocraft modifier that each take up a 5ft spherical space that you can see within a 30ft radius. As a bonus action, you can teleport into any of these spheres of darkness.",
+                "This feature is usable once per short or long rest, unless you expend a use of your blood maledict feature to use it again."
             ]
         },
         {
@@ -3229,7 +3329,8 @@
             "classSource": "BH2022",
             "level": 7,
             "entries": [
-                "TODO"
+                "Your connection to the vibrant life of the Feywilds and the ever-present death of the Shadowfell grant you the powers to heal one in great need. You target one creature within 30ft and roll your hemocraft die a number of times equal to your proficiency bonus and add your hemocraft modifier. The creature regains hit points equal to the total. This requires no action.",
+                "This feature is usable once per short rest."
             ]
         },
         {
@@ -3241,7 +3342,7 @@
             "classSource": "BH2022",
             "level": 11,
             "entries": [
-                "TODO"
+                "Starting at 11th level, your {@classFeature Brand of Castigation|Blood Hunter|BH2022|6} aids to your defensive capabilities, dissuading enemies from attacking you. A branded enemy that attacks you suffers a hemocraft die of psychic damage and a hemocraft die of necrotic damage."
             ]
         },
         {
@@ -3253,7 +3354,7 @@
             "classSource": "BH2022",
             "level": 15,
             "entries": [
-                "TODO"
+                "Starting at 15th level, when you or an ally within 30ft is suffering psychic or necrotic damage, you may use your reaction to halve the damage. You can use this feature a number of times equal to your proficiency bonus per long rest."
             ]
         },
         {
@@ -3265,7 +3366,8 @@
             "classSource": "BH2022",
             "level": 15,
             "entries": [
-                "TODO"
+                "Starting at 15th level, you may use an action to cast {@spell Plane Shift|XPHB} with no material components. The destination plane must be either the Material Plane, the Feywilds, or the Shadowfell.",
+                "Once this feature is used, you cannot use it again for 7 days."
             ]
         },
         {
@@ -3277,7 +3379,71 @@
             "classSource": "BH2022",
             "level": 18,
             "entries": [
-                "TODO"
+                "At 18th level, you hone your hemocraft to conjure illusions of your enemies greatest fears. You gain the {@optfeature Blood Curse of Terrorising|Andreya} for your {@classFeature Blood Maledict|Blood Hunter|BH2022|1} feature. This doesn't count against your number of blood curses known."
+            ]
+        }
+    ],
+    "optionalfeature": [
+        {
+            "name": "Blood Curse of the Transmuter",
+            "source": "Andreya",
+            "featureType": [
+                "BC"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 18,
+                        "class": {
+                            "name": "Blood Hunter"
+                        },
+                        "subclass": {
+                            "name": "Order of the Cryptid",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "As a reaction, you transmute the damage of a spell that targets you to a damage type you resist from your {@classFeature Monstrous Boon|Blood Hunter|BH2022|Cryptid|Andreya|3} feature.",
+                {
+                    "type": "entries",
+                    "name": "Amplify",
+                    "entries": [
+                        "You can transmute any spell cast within 60ft of you to a damage type you have resistance to. This does not have to be from your Monstrous Boon feature."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blood Curse of Terrorising",
+            "source": "Andreya",
+            "featureType": [
+                "BC"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 18,
+                        "class": {
+                            "name": "Blood Hunter"
+                        },
+                        "subclass": {
+                            "name": "Order of the Planeswalker",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "As a bonus action, each enemy you target within 30ft of you must make a Wisdom saving throw against your hemocraft save DC. On a failed save, the creature is {@condition frightened|XPHB} and suffers 4d10 psychic damage.",
+                {
+                    "type": "entries",
+                    "name": "Amplify",
+                    "entries": [
+                        "You may choose one creature to make the saving throw with disadvantage."
+                    ]
+                }
             ]
         }
     ],
