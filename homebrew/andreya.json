@@ -37,6 +37,9 @@
                 "EGW",
                 "UAFighterRogueWizard",
                 "XGE"
+            ],
+            "class": [
+                "BH2022"
             ]
         },
         "status": "wip"
@@ -1553,6 +1556,35 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "Order of the Cryptid",
+            "shortName": "Cryptid",
+            "source": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "subclassFeatures": [
+                "Order of the Cryptid|Blood Hunter|BH2022|Cryptid|Andreya|3",
+                "Uncanny Movement|Blood Hunter|BH2022|Cryptid|Andreya|7",
+                "Cryptid Physiology|Blood Hunter|BH2022|Cryptid|Andreya|11",
+                "Brand of the Fates|Blood Hunter|BH2022|Cryptid|Andreya|15",
+                "Blood Curse of the Transmuter|Blood Hunter|BH2022|Cryptid|Andreya|18"
+            ]
+        },
+        {
+            "name": "Order of the Planeswalker",
+            "shortName": "Planeswalker",
+            "source": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "subclassFeatures": [
+                "Order of the Planeswalker|Blood Hunter|BH2022|Planeswalker|Andreya|3",
+                "Phantom Healing|Blood Hunter|BH2022|Planeswalker|Andreya|7",
+                "Brand of Protection|Blood Hunter|BH2022|Planeswalker|Andreya|11",
+                "Mirage Recall|Blood Hunter|BH2022|Planeswalker|Andreya|15",
+                "Lesser Plane Shift|Blood Hunter|BH2022|Planeswalker|Andreya|15",
+                "Blood Curse of Terrorising|Blood Hunter|BH2022|Planeswalker|Andreya|18"
+            ]
         }
     ],
     "subclassFeature": [
@@ -3050,6 +3082,202 @@
                     ]
                 },
                 "This effect ends early if you become {@condition incapacitated|xphb}, or die. Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Order of the Cryptid",
+            "source": "Andreya",
+            "subclassShortName": "Cryptid",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 3,
+            "entries": [
+                "TODO",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Monstrous Boon|Blood Hunter|BH2022|Cryptid|Andreya|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Mythical Hunter|Blood Hunter|BH2022|Cryptid|Andreya|3"
+                }
+            ]
+        },
+        {
+            "name": "Monstrous Boon",
+            "source": "Andreya",
+            "subclassShortName": "Cryptid",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 3,
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Mythical Hunter",
+            "source": "Andreya",
+            "subclassShortName": "Cryptid",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 3,
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Uncanny Movement",
+            "source": "Andreya",
+            "subclassShortName": "Cryptid",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 7,
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Cryptid Physiology",
+            "source": "Andreya",
+            "subclassShortName": "Cryptid",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 11,
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Brand of the Fates",
+            "source": "Andreya",
+            "subclassShortName": "Cryptid",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 15,
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Blood Curse of the Transmuter",
+            "source": "Andreya",
+            "subclassShortName": "Cryptid",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 18,
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Order of the Planeswalker",
+            "source": "Andreya",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 3,
+            "entries": [
+                "TODO",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Planar Step|Blood Hunter|BH2022|Planeswalker|Andreya|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Emotional Specialist|Blood Hunter|BH2022|Planeswalker|Andreya|3"
+                }
+            ]
+        },
+        {
+            "name": "Planar Step",
+            "source": "Andreya",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 3,
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Emotional Specialist",
+            "source": "Andreya",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 3,
+            "entries": [
+                "Starting at 3rd level, you gain advantage on {@skill Insight} checks."
+            ]
+        },
+        {
+            "name": "Phantom Healing",
+            "source": "Andreya",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 7,
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Brand of Protection",
+            "source": "Andreya",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 11,
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Mirage Recall",
+            "source": "Andreya",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 15,
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Lesser Plane Shift",
+            "source": "Andreya",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 15,
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Blood Curse of Terrorising",
+            "source": "Andreya",
+            "subclassShortName": "Planeswalker",
+            "subclassSource": "Andreya",
+            "className": "Blood Hunter",
+            "classSource": "BH2022",
+            "level": 18,
+            "entries": [
+                "TODO"
             ]
         }
     ],
