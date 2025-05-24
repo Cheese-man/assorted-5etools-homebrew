@@ -1202,19 +1202,19 @@
                             "cause fear|xphb",
                             "inflict wounds|xphb"
                         ],
-                        "2": [
+                        "3": [
                             "gentle repose|xphb",
                             "wither and bloom|scc"
                         ],
-                        "3": [
+                        "5": [
                             "animate dead|xphb",
                             "bestow curse|xphb"
                         ],
-                        "4": [
+                        "7": [
                             "blight|xphb",
                             "shadow of moil|xge"
                         ],
-                        "5": [
+                        "9": [
                             "enervation|xge",
                             "raise dead|xphb"
                         ]
@@ -1253,19 +1253,19 @@
                             "arms of hadar|xphb",
                             "find familiar|xphb"
                         ],
-                        "2": [
+                        "3": [
                             "misty step|xphb",
                             "summon beast|xphb"
                         ],
-                        "3": [
+                        "5": [
                             "spirit guardians|xphb",
                             "hunger of hadar|xphb"
                         ],
-                        "4": [
+                        "7": [
                             "dimension door|xphb",
                             "guardian of faith|xphb"
                         ],
-                        "5": [
+                        "9": [
                             "summon draconic spirit|ftd",
                             "teleportation circle|xphb"
                         ]
@@ -1305,19 +1305,19 @@
                             "absorb elements|xge",
                             "sanctuary|xphb"
                         ],
-                        "2": [
+                        "3": [
                             "aid|xphb",
                             "lesser restoration|xphb"
                         ],
-                        "3": [
+                        "5": [
                             "counterspell|xphb",
                             "dispel magic|xphb"
                         ],
-                        "4": [
+                        "7": [
                             "banishment|xphb",
                             "death ward|xphb"
                         ],
-                        "5": [
+                        "9": [
                             "dispel evil and good|xphb",
                             "greater restoration|xphb"
                         ]
@@ -1356,19 +1356,19 @@
                             "disguise self|xphb",
                             "silent image|xphb"
                         ],
-                        "2": [
+                        "3": [
                             "mirror image|xphb",
                             "nathair's mischief|ftd"
                         ],
-                        "3": [
+                        "5": [
                             "hypnotic pattern|xphb",
                             "major image|xphb"
                         ],
-                        "4": [
+                        "7": [
                             "divination|xphb",
                             "greater invisibility|xphb"
                         ],
-                        "5": [
+                        "9": [
                             "mislead|xphb",
                             "seeming|xphb"
                         ]
@@ -1408,19 +1408,19 @@
                             "longstrider|xphb",
                             "magnify gravity|egw"
                         ],
-                        "2": [
+                        "3": [
                             "alter self|xphb",
                             "enhance ability|xphb"
                         ],
-                        "3": [
+                        "5": [
                             "blink|xphb",
                             "fly|xphb"
                         ],
-                        "4": [
+                        "7": [
                             "elemental bane|xge",
                             "polymorph|xphb"
                         ],
-                        "5": [
+                        "9": [
                             "skill empowerment|xge",
                             "telekinesis|xphb"
                         ]
@@ -1464,21 +1464,91 @@
                             "hellish rebuke|xphb",
                             "witch bolt|xphb"
                         ],
-                        "2": [
+                        "3": [
                             "shatter|xphb",
                             "rime's binding ice|ftd"
                         ],
-                        "3": [
+                        "5": [
                             "fly|xphb",
                             "melf's minute meteors|xge"
                         ],
-                        "4": [
+                        "7": [
                             "control water|xphb",
                             "storm sphere|xge"
                         ],
-                        "5": [
+                        "9": [
                             "bigby's hand|xphb",
                             "maelstrom|xge"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Path of the High Wind",
+            "shortName": "High Wind",
+            "source": "Andreya",
+            "className": "Barbarian",
+            "classSource": "XPHB",
+            "subclassFeatures": [
+                "Leap of Anger|Barbarian|XPHB|High Wind|Andreya|3",
+                "Whirling Thrust|Barbarian|XPHB|High Wind|Andreya|6",
+                "Nimble Landing|Barbarian|XPHB|High Wind|Andreya|10",
+                "Sky Shatter|Barbarian|XPHB|High Wind|Andreya|14"
+            ],
+            "fluff": {
+                "entries": [
+                    "Some Barbarians seek to use the sky as an arena to meet their ends. Those who walk the Path of the High Wind harness energy from the elemental plane of air to fuel the primal bloodlust born from rage. Derived from the ancient teachings of the Dragoon warriors, these barbarians are capable of unrivalled acrobatic ability, leaping into the sky with furious intent - that intent indeed being of a violent nature."
+                ]
+            }
+        },
+        {
+            "name": "Oath of the Scalebearers",
+            "shortName": "Scalebearers",
+            "source": "Andreya",
+            "className": "Paladin",
+            "classSource": "XPHB",
+            "subclassFeatures": [
+                "Oath of the Scalebearers|Paladin|XPHB|Scalebearers|Andreya|3",
+                "Aura of Sight|Paladin|XPHB|Scalebearers|Andreya|7",
+                "Superior Scales|Paladin|XPHB|Scalebearers|Andreya|15",
+                "Aura of Sight (18th Level)|Paladin|XPHB|Scalebearers|Andreya|18",
+                "Path of the Dragon|Paladin|XPHB|Scalebearers|Andreya|20"
+            ],
+            "subclassSpells": [
+                "grease|xphb",
+                "silent image|xphb",
+                "acid arrow|xphb",
+                "mirror image|xphb",
+                "lightning arrow|xphb",
+                "glyph of warding|xphb",
+                "wall of fire|xphb",
+                "mordenkainen's private sanctum|xphb",
+                "cone of cold|xphb",
+                "cloudkill|xphb"
+            ],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "grease|xphb",
+                            "silent image|xphb"
+                        ],
+                        "5": [
+                            "acid arrow|xphb",
+                            "mirror image|xphb"
+                        ],
+                        "9": [
+                            "lightning arrow|xphb",
+                            "glyph of warding|xphb"
+                        ],
+                        "13": [
+                            "wall of fire|xphb",
+                            "mordenkainen's private sanctum|xphb"
+                        ],
+                        "17": [
+                            "cone of cold|xphb",
+                            "cloudkill|xphb"
                         ]
                     }
                 }
@@ -2761,6 +2831,225 @@
                 "Once per long rest, when you use your {@subclassFeature Tempest Arcane|Thaumaturge|Andreya|Elemental Scion|Andreya|6} feature or your {@subclassFeature Combined Elements|Thaumaturge|Andreya|Elemental Scion|Andreya|6}, you may choose an additonal effect from their respective tables, subject to the original requirements of each. You cannot choose the same effect twice.",
                 "After you have used this feature, you may use it again before you next complete a long rest by expending two uses of the feature at a time.",
                 "Additionally, when you cast {@spell Investiture of Flame|XGE}, {@spell Investiture of Ice|XGE}, {@spell Investiture of Stone|XGE} or {@spell Investiture of Wind|XGE}, you do not need to concentrate on the spell."
+            ]
+        },
+        {
+            "name": "Leap of Anger",
+            "source": "Andreya",
+            "className": "Barbarian",
+            "classSource": "XPHB",
+            "subclassShortName": "High Wind",
+            "subclassSource": "Andreya",
+            "level": 3,
+            "entries": [
+                "You gain access to the {@spell Prestidigitation|XPHB} cantrip.",
+                "While raging, you may expend one use of this feature to leap 10 feet into the air as part of one of your attacks. This will grant you advantage to hit with your melee weapon attack and you can add {@damage 1d6} bludgeoning damage to your attack, however, you will also take the same d6 of damage. You may only use this feature once per round of combat.",
+                "This increases to {@damage 2d6} and 20ft at 9th level and {@damage 3d6} and 30ft at 17th level in the barbarian class. This type of attack does not provoke attacks of opportunity as it is part of the same attack, and the attacker will land within melee range of their foe.",
+                "This feature is useable a number of times equal to your proficiency bonus per long rest."
+            ]
+        },
+        {
+            "name": "Whirling Thrust",
+            "source": "Andreya",
+            "className": "Barbarian",
+            "classSource": "XPHB",
+            "subclassShortName": "High Wind",
+            "subclassSource": "Andreya",
+            "level": 6,
+            "entries": [
+                "Beginning at 6th level, the elemental energy from the plane of air can provide supernatural propulsion to you in a moment of need.",
+                "If a flying creature or object is within your movement range at the start of your turn, you may expend 2 uses of your {@subclassFeature Leap of Anger|Barbarian|XPHB|High Wind|Andreya|3} feature to hit them.",
+                "Additionally, you gain the {@spell Gust of Wind|XPHB} spell. "
+            ]
+        },
+        {
+            "name": "Nimble Landing",
+            "source": "Andreya",
+            "className": "Barbarian",
+            "classSource": "XPHB",
+            "subclassShortName": "High Wind",
+            "subclassSource": "Andreya",
+            "level": 10,
+            "entries": [
+                "At 10th level, you gain the ability to land gently after sufficient practice and perfection of your Primal Path's abilitites.",
+                "While raging you are immune to damage from falling up to 50 ft, including the damage taken from {@subclassFeature Leap of Anger|Barbarian|XPHB|High Wind|Andreya|3}.",
+                "Additionally, you gain advantage on {@skill Acrobatics} checks, and can use your {@subclassFeature Whirling Thrust|Barbarian|XPHB|High Wind|Andreya|6} feature to aid in climbing or leaping to a point of interest."
+            ]
+        },
+        {
+            "name": "Sky Shatter",
+            "source": "Andreya",
+            "className": "Barbarian",
+            "classSource": "XPHB",
+            "subclassShortName": "High Wind",
+            "subclassSource": "Andreya",
+            "level": 14,
+            "entries": [
+                "At 14th level, your extraplanar connection continues to flourish. As an attack, you may leap into the air using the same rules as {@subclassFeature Leap of Anger|Barbarian|XPHB|High Wind|Andreya|3}. When doing so, you conjure four javelins of pure energy, created from the unbridled chaos of the Plane of Air. Roll to hit with each javelin, with advantage. Each javelin does {@damage 2d6} force damage plus your strength modifier.",
+                "You may use this feature once per short rest."
+            ]
+        },
+        {
+            "name": "Oath of the Scalebearers",
+            "source": "Andreya",
+            "className": "Paladin",
+            "classSource": "XPHB",
+            "subclassShortName": "Scalebearers",
+            "subclassSource": "Andreya",
+            "level": 3,
+            "entries": [
+                "The Oath of the Scalebearers calls to the nomadic warriors of Titan, protectors of their homeland and defenders of great creatures of myth who are in need of protection.  Harnessing the very power of those being their sworn to watch over, paladins who swear this oath stand against those who would try to hunt these creatures for sport, or means more nefarious.",
+                "Such guardians believe in the beauty of the creatures of the world, often making offerings and prayers to entities or deities such as Bahamut and Helm who influence Justice and Protection. At the same time, they answer the call to hunt those unnatural creatures that too often seek to wretch control over the natural order with ill intent, bringing terror to the cycle of life as we know it.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath of the Scalebearers Spells|Paladin|XPHB|Scalebearers|Andreya|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Draconic Weapon|Paladin|XPHB|Scalebearers|Andreya|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Chromatic Fervor|Paladin|XPHB|Scalebearers|Andreya|3"
+                }
+            ]
+        },
+        {
+            "name": "Oath of the Scalebearers Spells",
+            "source": "Andreya",
+            "className": "Paladin",
+            "classSource": "XPHB",
+            "subclassShortName": "Scalebearers",
+            "subclassSource": "Andreya",
+            "level": 3,
+            "entries": [
+                "The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of the Scalebearers Spells table, you thereafter always have the listed spells prepared.",
+                {
+                    "type": "table",
+                    "caption": "Oath of the Scalebearers Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Grease|XPHB}, {@spell Silent Image|XPHB}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Acid Arrow|XPHB}, {@spell Mirror Image|XPHB}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Lightning Arrow|XPHB}, {@spell Glyph of Warding|XPHB}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Wall of Fire|XPHB}, {@spell Mordenkainen's Private Sanctum|XPHB}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell Cone of Cold|XPHB}, {@spell Cloudkill|XPHB}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Draconic Weapon",
+            "source": "Andreya",
+            "className": "Paladin",
+            "classSource": "XPHB",
+            "subclassShortName": "Scalebearers",
+            "subclassSource": "Andreya",
+            "level": 3,
+            "header": 2,
+            "consumes": {
+                "name": "Channel Divinity",
+                "amount": 1
+            },
+            "entries": [
+                "As a {@action Magic|XPHB} action, you can expend one use of your Channel Divinity to enchant one weapon that you wield with a type of elemental damage. For 10 minutes, you may add {@damage 1d8} of this damage to all melee attacks made with this weapon."
+            ]
+        },
+        {
+            "name": "Chromatic Fervor",
+            "source": "Andreya",
+            "className": "Paladin",
+            "classSource": "XPHB",
+            "subclassShortName": "Scalebearers",
+            "subclassSource": "Andreya",
+            "level": 3,
+            "header": 2,
+            "consumes": {
+                "name": "Channel Divinity",
+                "amount": 1
+            },
+            "entries": [
+                "After you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action and gain one elemental resistance of your choice. This resistance persists until the end of combat."
+            ]
+        },
+        {
+            "name": "Aura of Sight",
+            "source": "Andreya",
+            "className": "Paladin",
+            "classSource": "XPHB",
+            "subclassShortName": "Scalebearers",
+            "subclassSource": "Andreya",
+            "level": 7,
+            "entries": [
+                "You emanate an aura that grants you and your companions dragon-like vision, allowing you to see even the most hidden things. You gain 10ft of {@sense Truesight}. In addition, if you aren't {@condition incapacitated|xphb}, any ally who starts their turn within 10 feet of you gains this benefit as well."
+            ]
+        },
+        {
+            "name": "Superior Scales",
+            "source": "Andreya",
+            "className": "Paladin",
+            "classSource": "XPHB",
+            "subclassShortName": "Scalebearers",
+            "subclassSource": "Andreya",
+            "level": 15,
+            "entries": [
+                "When you make a saving throw against a spell or effect that deals elemental damage, you can use your reaction to absorb some of the damage dealt. On a failed save, the damage dealt to you is zero and on a success, you gain {@variantrule temporary hit points|XPHB} equal to half the damage total, to a maximum of 50 temporary hit points.",
+                "This feature can be used once per long rest."
+            ]
+        },
+        {
+            "name": "Aura of Sight (18th Level)",
+            "source": "Andreya",
+            "className": "Paladin",
+            "classSource": "XPHB",
+            "subclassShortName": "Scalebearers",
+            "subclassSource": "Andreya",
+            "level": 18,
+            "entries": [
+                "When you reach 18th level in this class, the range of your {@subclassFeature Aura of Sight|Paladin|XPHB|Scalebearers|Andreya|3} increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Path of the Dragon",
+            "source": "Andreya",
+            "className": "Paladin",
+            "classSource": "XPHB",
+            "subclassShortName": "Scalebearers",
+            "subclassSource": "Andreya",
+            "level": 20,
+            "entries": [
+                "You can empower yourself with the power of those you are sworn to defend. As a bonus action, you gain the following benefits for 1 minute:",
+                {
+                    "type": "list",
+                    "items": [
+                        "If your Armor Class was less than 22, it is raised to 22.",
+                        "You gain resistance to all elemental damage.",
+                        "You can make Strength and Constitution saving throws at advantage against effects and spells you can see."
+                    ]
+                },
+                "This effect ends early if you become {@condition incapacitated|xphb}, or die. Once you use this feature, you can't use it again until you finish a long rest."
             ]
         }
     ],
