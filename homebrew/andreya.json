@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "1.4.0",
+                "version": "1.5.0",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1748099043726,
+        "dateLastModified": 1748139026786,
         "edition": "one",
         "spellSchools": {
             "DM": {
