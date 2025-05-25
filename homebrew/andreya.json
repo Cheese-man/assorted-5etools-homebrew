@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "1.6.0",
+                "version": "1.6.1",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1748152420223,
+        "dateLastModified": 1748152612925,
         "edition": "one",
         "spellSchools": {
             "DM": {
@@ -3526,7 +3526,7 @@
             "level": 18,
             "entries": [
                 "Starting at 18th level, your elemental prowess has allowed you to stave off damage to a more significant degree. You gain immunity to lightning damage, and once per short or long rest you can take no damage when using your {@subclassFeature Lightning Rod|Fighter|XPHB|Lightning Skirmisher|Andreya|3} feature.",
-                "Additionally, the damage dealt by using a {@subclassFeature Galvanic Burst|Fighter|XPHB|Lightning Skirmisher|Andreya|3||galvanic charges} increases to {@damage 3d10}, and the amount of damage you can reduce from using your {@subclassFeature Lightning Rod|Fighter|XPHB|Lightning Skirmisher|Andreya|3} feature increases to {@damage 3sd10}."
+                "Additionally, the damage dealt by using a {@subclassFeature Galvanic Burst|Fighter|XPHB|Lightning Skirmisher|Andreya|3||galvanic charges} increases to {@damage 3d10}, and the amount of damage you can reduce from using your {@subclassFeature Lightning Rod|Fighter|XPHB|Lightning Skirmisher|Andreya|3} feature increases to {@damage 3d10}."
             ]
         }
     ],
