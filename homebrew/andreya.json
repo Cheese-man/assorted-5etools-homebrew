@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "1.6.1",
+                "version": "1.7.0",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1748152612925,
+        "dateLastModified": 1748159883289,
         "edition": "one",
         "spellSchools": {
             "DM": {
@@ -1617,6 +1617,57 @@
                 "Static Chain|Fighter|XPHB|Lightning Skirmisher|Andreya|10",
                 "Overcharged|Fighter|XPHB|Lightning Skirmisher|Andreya|15",
                 "Grounded Conduit|Fighter|XPHB|Lightning Skirmisher|Andreya|18"
+            ]
+        },
+        {
+            "name": "Timekeeper",
+            "shortName": "Timekeeper",
+            "source": "Andreya",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassFeatures": [
+                "Timekeeper|Artificer|TCE|Timekeeper|Andreya|3",
+                "Temporal Foresight|Artificer|TCE|Timekeeper|Andreya|5",
+                "Accelerated Demise|Artificer|TCE|Timekeeper|Andreya|9",
+                "Order of Mechanus|Artificer|TCE|Timekeeper|Andreya|15"
+            ],
+            "subclassSpells": [
+                "bane|xphb",
+                "sleep|xphb",
+                "augury|xphb",
+                "ray of enfeeblement|xphb",
+                "counterspell|xphb",
+                "slow|xphb",
+                "banishment|xphb",
+                "mordenkainen's private sanctum|xphb",
+                "contact other plane|xphb",
+                "hold monster|xphb"
+            ],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "bane|xphb",
+                            "sleep|xphb"
+                        ],
+                        "5": [
+                            "augury|xphb",
+                            "ray of enfeeblement|xphb"
+                        ],
+                        "9": [
+                            "counterspell|xphb",
+                            "slow|xphb"
+                        ],
+                        "13": [
+                            "banishment|xphb",
+                            "mordenkainen's private sanctum|xphb"
+                        ],
+                        "17": [
+                            "contact other plane|xphb",
+                            "hold monster|xphb"
+                        ]
+                    }
+                }
             ]
         }
     ],
@@ -3527,6 +3578,137 @@
             "entries": [
                 "Starting at 18th level, your elemental prowess has allowed you to stave off damage to a more significant degree. You gain immunity to lightning damage, and once per short or long rest you can take no damage when using your {@subclassFeature Lightning Rod|Fighter|XPHB|Lightning Skirmisher|Andreya|3} feature.",
                 "Additionally, the damage dealt by using a {@subclassFeature Galvanic Burst|Fighter|XPHB|Lightning Skirmisher|Andreya|3||galvanic charges} increases to {@damage 3d10}, and the amount of damage you can reduce from using your {@subclassFeature Lightning Rod|Fighter|XPHB|Lightning Skirmisher|Andreya|3} feature increases to {@damage 3d10}."
+            ]
+        },
+        {
+            "name": "Timekeeper",
+            "source": "Andreya",
+            "subclassShortName": "Timekeeper",
+            "subclassSource": "Andreya",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "level": 3,
+            "entries": [
+                "A Timekeeper specializes in using magic to manipulate time and infuse their own creations with such magic, rewinding time briefly when needed to fix small mistakes. The power to make an inevitability take a fraction of time longer, or to change the outcome of things, is extremely sought after by those wishing to change the world. The essence of Mechanus emboldens your ability to manipulate the Weave, and create new possibilities that without you simply would not exist.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tool Proficiency|Artificer|TCE|Timekeeper|Andreya|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Timekeeper Spells|Artificer|TCE|Timekeeper|Andreya|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Time March|Artificer|TCE|Timekeeper|Andreya|3"
+                }
+            ]
+        },
+        {
+            "name": "Tool Proficiency",
+            "source": "Andreya",
+            "subclassShortName": "Timekeeper",
+            "subclassSource": "Andreya",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "level": 3,
+            "entries": [
+                "You gain proficiency with {@item weaver's tools|xphb}. If you already have this proficiency, you gain proficiency with one other type of {@item artisan's tools|xphb} of your choice."
+            ]
+        },
+        {
+            "name": "Timekeeper Spells",
+            "source": "Andreya",
+            "subclassShortName": "Timekeeper",
+            "subclassSource": "Andreya",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "level": 3,
+            "entries": [
+                "You always have certain spells prepared after you reach particular levels in this class, as shown in the Timekeeper Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "Artificer Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Bane|XPHB}, {@spell Sleep|XPHB}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Augury|XPHB}, {@spell Ray of Enfeeblement|XPHB}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Counterspell|XPHB}, {@spell Slow|XPHB}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell Banishment|XPHB}, {@spell Mordenkainen's Private Sanctum|XPHB}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell Contact Other Plane|XPHB}, {@spell Hold Monster|XPHB}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Time March",
+            "source": "Andreya",
+            "subclassShortName": "Timekeeper",
+            "subclassSource": "Andreya",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "level": 3,
+            "entries": [
+                "You gain {@variantrule advantage|xphb} on all initiative rolls. In addition, when targeting a creature with a melee attack, spell attack, or single target spell effect, you may use a free action to mark them. Choose an ability (e.g. Wisdom). A marked creature must subtract your proficiency bonus from saving throws it makes using that ability until the start of your next turn. This feature is usable a number of times equal to your Intelligence modifier per {@variantrule long rest|xphb}."
+            ]
+        },
+        {
+            "name": "Temporal Foresight",
+            "source": "Andreya",
+            "subclassShortName": "Timekeeper",
+            "subclassSource": "Andreya",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "level": 5,
+            "entries": [
+                "Immediately after the effects of your action have been determined, you can use a reaction to undo that action, restarting your turn phase. This is usable a number of times equal to your proficiency bonus per long rest. In addition, moving through nonmagical difficult terrain costs you no extra movement."
+            ]
+        },
+        {
+            "name": "Accelerated Demise",
+            "source": "Andreya",
+            "subclassShortName": "Timekeeper",
+            "subclassSource": "Andreya",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "level": 9,
+            "entries": [
+                "At 9th level, a creature marked with your {@subclassFeature Time March|Artificer|TCE|Timekeeper|Andreya|3} ability now has {@variantrule disadvantage|xphb} on saving throws caused by your spells. You may also now expend a use of your {@subclassFeature Time March|Artificer|TCE|Timekeeper|Andreya|3} ability to change the damage type of one of your spells to necrotic.",
+                "Additionally, you gain resistance to necrotic damage, and you recover all uses of your Time March feature on a {@variantrule short rest|xphb}."
+            ]
+        },
+        {
+            "name": "Order of Mechanus",
+            "source": "Andreya",
+            "subclassShortName": "Timekeeper",
+            "subclassSource": "Andreya",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "level": 15,
+            "entries": [
+                "You can cast {@spell Time Stop|XPHB}. You ignore this spell's restrictions, however no damage can be dealt while under the effects of this spell.",
+                "This can be used once per {@variantrule long rest|xphb}."
             ]
         }
     ],
