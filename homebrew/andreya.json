@@ -42,6 +42,9 @@
                 "BH2022"
             ]
         },
+        "internalCopies": [
+            "item"
+        ],
         "status": "wip"
     },
     "class": [
@@ -3815,9 +3818,8 @@
         {
             "name": "+1 Blightwood Wand",
             "source": "Andreya",
-            "type": "SCF",
+            "type": "WD|XDMG",
             "rarity": "uncommon",
-            "wondrous": true,
             "focus": [
                 "Thaumaturge|Andreya"
             ],
@@ -3826,41 +3828,170 @@
             "bonusSavingThrow": "+1",
             "weight": 1,
             "entries": [
+                "While holding this wand, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your thaumaturge spells.",
                 "You may pick a leveled spell at the end of a {@variantrule long rest|xphb} on a spell list besides your own. You can add this to your spells prepared for the day. The level of the spell must not be higher your proficiency bonus."
             ]
         },
         {
             "name": "+2 Blightwood Wand",
             "source": "Andreya",
-            "type": "SCF",
             "rarity": "rare",
-            "wondrous": true,
-            "focus": [
-                "Thaumaturge|Andreya"
-            ],
-            "reqAttune": "by a thaumaturge",
+            "_copy": {
+                "name": "+1 Blightwood Wand",
+                "source": "Andreya",
+                "_mod": {
+                    "entries": [
+                        {
+                            "mode": "replaceTxt",
+                            "replace": "\\+1",
+                            "with": "+2",
+                            "flags": "i"
+                        }
+                    ]
+                }
+            },
             "bonusSpellAttack": "+2",
-            "bonusSavingThrow": "+2",
-            "weight": 1,
-            "entries": [
-                "You may pick a leveled spell at the end of a {@variantrule long rest|xphb} on a spell list besides your own. You can add this to your spells prepared for the day. The level of the spell must not be higher your proficiency bonus."
-            ]
+            "bonusSavingThrow": "+2"
         },
         {
             "name": "+3 Blightwood Wand",
             "source": "Andreya",
-            "type": "SCF",
             "rarity": "very rare",
-            "wondrous": true,
-            "focus": [
-                "Thaumaturge|Andreya"
-            ],
-            "reqAttune": "by a thaumaturge",
+            "_copy": {
+                "name": "+1 Blightwood Wand",
+                "source": "Andreya",
+                "_mod": {
+                    "entries": [
+                        {
+                            "mode": "replaceTxt",
+                            "replace": "\\+1",
+                            "with": "+3",
+                            "flags": "i"
+                        }
+                    ]
+                }
+            },
             "bonusSpellAttack": "+3",
-            "bonusSavingThrow": "+3",
-            "weight": 1,
+            "bonusSavingThrow": "+3"
+        },
+        {
+            "name": "Totem of the Elements",
+            "source": "Andreya",
+            "type": "OTH",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": "by a thaumaturge",
+            "charges": 3,
+            "recharge": "dawn",
             "entries": [
-                "You may pick a leveled spell at the end of a {@variantrule long rest|xphb} on a spell list besides your own. You can add this to your spells prepared for the day. The level of the spell must not be higher your proficiency bonus."
+                "The Totem of the Elements is a magical woven tapestry created by The Coven of the Star Spirits, who can be found in different sects on every continent.",
+                "The totem has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. Whenever you expend a use of your {@classFeature Dire Sacrifice|Thaumaturge|Andreya|1} feature, you may expend a charge to change the damage type of the spell to cold, fire, lightning or thunder.",
+                "Additionally, you can cast {@spell Hellish Rebuke|XPHB}, {@spell Rime's Binding Ice|FTD}, and {@spell Fly|XPHB} once each per long rest. Your spellcasting ability for these is Intelligence."
+            ],
+            "attachedSpells": [
+                "hellish rebuke|xphb",
+                "rime's binding ice|ftd",
+                "fly|xphb"
+            ]
+        },
+        {
+            "name": "Totem of Souls",
+            "source": "Andreya",
+            "type": "OTH",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": "by a thaumaturge",
+            "charges": 3,
+            "recharge": "dawn",
+            "entries": [
+                "The Totem of Souls is a magical woodcarving created by The Coven of Wilting, which was said to merge with the Cloven Order to form the Cerberus Network found throughout Andreya today.",
+                "The totem has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. Whenever you expend a use of your {@classFeature Dire Sacrifice|Thaumaturge|Andreya|1} feature, you may expend a charge to force the creature to make a Wisdom saving throw or be {@condition frightened|xphb} for the next minute. The creature may reattempt the saving throw at the end of each of their turns.",
+                "Additionally, you can cast {@spell Inflict Wounds|XPHB}, {@spell Wither and Bloom|SCC}, and {@spell Animate Dead|XPHB} once each per long rest. Your spellcasting ability for these is Intelligence."
+            ],
+            "attachedSpells": [
+                "inflict wounds|xphb",
+                "wither and bloom|scc",
+                "animate dead|xphb"
+            ]
+        },
+        {
+            "name": "Totem of Dreams",
+            "source": "Andreya",
+            "type": "OTH",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": "by a thaumaturge",
+            "charges": 3,
+            "recharge": "dawn",
+            "entries": [
+                "The Totem of Dreams is a magical painting created by The Coven of Stories, hailing from the continent of Viridis before it was consigned to the waves.",
+                "The totem has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. Whenever you expend a use of your {@classFeature Dire Sacrifice|Thaumaturge|Andreya|1} feature, you may expend a charge to gain insight into the creature's desires. If what they seek is a feeling or idea, it will be understood, but without context.",
+                "Additionally, you can cast {@spell Disguise Self|XPHB}, {@spell Mirror Image|XPHB}, and {@spell Major Image|XPHB} once each per long rest. Your spellcasting ability for these is Intelligence."
+            ],
+            "attachedSpells": [
+                "disguise self|xphb",
+                "mirror image|xphb",
+                "major image|xphb"
+            ]
+        },
+        {
+            "name": "Totem of the Alchemist",
+            "source": "Andreya",
+            "type": "OTH",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": "by a thaumaturge",
+            "charges": 3,
+            "recharge": "dawn",
+            "entries": [
+                "The Totem of the Alchemist is a magical glass piece created by The Coven of Lunafaction, a group hailing from Palaru, Ifreya.",
+                "The totem has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. Whenever you expend a use of your {@classFeature Dire Sacrifice|Thaumaturge|Andreya|1} feature, you may expend a charge to destroy a non-magical item, weapon or armor held or worn by the creature.",
+                "Additionally, you can cast {@spell Magnify Gravity|EGW}, {@spell Alter Self|XPHB}, and {@spell Blink|XPHB} once each per long rest. Your spellcasting ability for these is Intelligence."
+            ],
+            "attachedSpells": [
+                "magnify gravity|egw",
+                "alter self|xphb",
+                "blink|xphb"
+            ]
+        },
+        {
+            "name": "Totem of the Oracle",
+            "source": "Andreya",
+            "type": "OTH",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": "by a thaumaturge",
+            "charges": 3,
+            "recharge": "dawn",
+            "entries": [
+                "The Totem of the Oracle is a magical ceramic created by The Coven of the White Rose, said to be founded by the remnants of an ancient civilisation.",
+                "The totem has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. Whenever you expend a use of your {@classFeature Dire Sacrifice|Thaumaturge|Andreya|1} feature, you may expend a charge to subtract a {@dice d6} from the next saving throw the creature makes.",
+                "Additionally, you can cast {@spell Sanctuary|XPHB}, {@spell Lesser Restoration|XPHB}, and {@spell Counterspell|XPHB} once each per long rest. Your spellcasting ability for these is Intelligence."
+            ],
+            "attachedSpells": [
+                "sanctuary|xphb",
+                "lesser restoration|xphb",
+                "counterspell|xphb"
+            ]
+        },
+        {
+            "name": "Totem of the Planes",
+            "source": "Andreya",
+            "type": "OTH",
+            "rarity": "rare",
+            "wondrous": true,
+            "reqAttune": "by a thaumaturge",
+            "charges": 3,
+            "recharge": "dawn",
+            "entries": [
+                "The Totem of the Planes is a tiny magical machine created by The Coven of the Prismatic Peony, who came together under the guidance of the Arcanist Cyran Ulawarin and the Runic Scholar Hans.",
+                "The totem has 3 charges, and it regains {@dice 1d3} expended charges daily at dawn. Whenever you expend a use of your {@classFeature Dire Sacrifice|Thaumaturge|Andreya|1} feature, you may expend a charge to increase your armor class by 2 until the start of your next turn.",
+                "Additionally, you can cast {@spell Arms of Hadar|XPHB}, {@spell Misty Step|XPHB}, and {@spell Hunger of Hadar|XPHB} once each per long rest. Your spellcasting ability for these is Intelligence."
+            ],
+            "attachedSpells": [
+                "arms of hadar|xphb",
+                "misty step|xphb",
+                "hunger of hadar|xphb"
             ]
         }
     ],
