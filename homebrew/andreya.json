@@ -3811,6 +3811,59 @@
             ]
         }
     ],
+    "item": [
+        {
+            "name": "+1 Blightwood Wand",
+            "source": "Andreya",
+            "type": "SCF",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "focus": [
+                "Thaumaturge|Andreya"
+            ],
+            "reqAttune": "by a thaumaturge",
+            "bonusSpellAttack": "+1",
+            "bonusSavingThrow": "+1",
+            "weight": 1,
+            "entries": [
+                "You may pick a leveled spell at the end of a {@variantrule long rest|xphb} on a spell list besides your own. You can add this to your spells prepared for the day. The level of the spell must not be higher your proficiency bonus."
+            ]
+        },
+        {
+            "name": "+2 Blightwood Wand",
+            "source": "Andreya",
+            "type": "SCF",
+            "rarity": "rare",
+            "wondrous": true,
+            "focus": [
+                "Thaumaturge|Andreya"
+            ],
+            "reqAttune": "by a thaumaturge",
+            "bonusSpellAttack": "+2",
+            "bonusSavingThrow": "+2",
+            "weight": 1,
+            "entries": [
+                "You may pick a leveled spell at the end of a {@variantrule long rest|xphb} on a spell list besides your own. You can add this to your spells prepared for the day. The level of the spell must not be higher your proficiency bonus."
+            ]
+        },
+        {
+            "name": "+3 Blightwood Wand",
+            "source": "Andreya",
+            "type": "SCF",
+            "rarity": "very rare",
+            "wondrous": true,
+            "focus": [
+                "Thaumaturge|Andreya"
+            ],
+            "reqAttune": "by a thaumaturge",
+            "bonusSpellAttack": "+3",
+            "bonusSavingThrow": "+3",
+            "weight": 1,
+            "entries": [
+                "You may pick a leveled spell at the end of a {@variantrule long rest|xphb} on a spell list besides your own. You can add this to your spells prepared for the day. The level of the spell must not be higher your proficiency bonus."
+            ]
+        }
+    ],
     "spell": [
         {
             "name": "Dark Star",
