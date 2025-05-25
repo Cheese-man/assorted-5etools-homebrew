@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "1.5.1",
+                "version": "1.6.0",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1748139319079,
+        "dateLastModified": 1748152420223,
         "edition": "one",
         "spellSchools": {
             "DM": {
@@ -143,7 +143,7 @@
             },
             "startingEquipment": {
                 "default": [
-                    "(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=xphb|category=basic|type=simple weapon}",
+                    "(a) a {@item light crossbow|xphb} and {@item crossbow bolts (20)|xphb|20 bolts} or (b) any {@filter simple weapon|items|source=xphb|category=basic|type=simple weapon}",
                     "(a) a {@item priest's pack|xphb} or (b) an {@item explorer's pack|xphb}",
                     "a {@filter tool or artisan's tool|items|source=xphb|type=tool;artisan's tools} of your choice",
                     "{@item leather armor|xphb}, and an {@item arcane focus|XPHB}"
@@ -1603,6 +1603,20 @@
                 "Mirage Recall|Blood Hunter|BH2022|Planeswalker|Andreya|15",
                 "Lesser Plane Shift|Blood Hunter|BH2022|Planeswalker|Andreya|15",
                 "Blood Curse of Terrorising|Blood Hunter|BH2022|Planeswalker|Andreya|18"
+            ]
+        },
+        {
+            "name": "Lightning Skirmisher",
+            "shortName": "Lightning Skirmisher",
+            "source": "Andreya",
+            "className": "Fighter",
+            "classSource": "XPHB",
+            "subclassFeatures": [
+                "Lightning Skirmisher|Fighter|XPHB|Lightning Skirmisher|Andreya|3",
+                "Flash Point|Fighter|XPHB|Lightning Skirmisher|Andreya|7",
+                "Static Chain|Fighter|XPHB|Lightning Skirmisher|Andreya|10",
+                "Overcharged|Fighter|XPHB|Lightning Skirmisher|Andreya|15",
+                "Grounded Conduit|Fighter|XPHB|Lightning Skirmisher|Andreya|18"
             ]
         }
     ],
@@ -3415,6 +3429,104 @@
             "level": 18,
             "entries": [
                 "At 18th level, you hone your hemocraft to conjure illusions of your enemies greatest fears. You gain the {@optfeature Blood Curse of Terrorising|Andreya} for your {@classFeature Blood Maledict|Blood Hunter|BH2022|1} feature. This doesn't count against your number of blood curses known."
+            ]
+        },
+        {
+            "name": "Lightning Skirmisher",
+            "source": "Andreya",
+            "subclassShortName": "Lightning Skirmisher",
+            "subclassSource": "Andreya",
+            "className": "Fighter",
+            "classSource": "XPHB",
+            "level": 3,
+            "entries": [
+                "A mysterious and merciless warrior of the Primordial Church, the Lightning Skirmisher has mastered the art of channeling chaos to wreath their being with powerful lightning. Using this effectively is the nature of battle for these skirmishers, as they charge into combat with drastic speed, neutralizing incoming damage and wielding it with reckless abandon.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Lightning Rod|Fighter|XPHB|Lightning Skirmisher|Andreya|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Galvanic Burst|Fighter|XPHB|Lightning Skirmisher|Andreya|3"
+                }
+            ]
+        },
+        {
+            "name": "Lightning Rod",
+            "source": "Andreya",
+            "subclassShortName": "Lightning Skirmisher",
+            "subclassSource": "Andreya",
+            "className": "Fighter",
+            "classSource": "XPHB",
+            "level": 3,
+            "entries": [
+                "Starting at 3rd level, you are adept in neutralizing elemental threats around you. As a reaction any time you suffer fire, cold, lightning, acid or thunder damage you can expend a use of this feature to reduce the damage by {@dice 1d10}.",
+                "You have a number of uses of this feature equal to your Proficiency Bonus per {@variantrule short rest|xphb}. At the 10th level in this class, it increases to 2d10, and at the 18th it increases to 3d10. "
+            ]
+        },
+        {
+            "name": "Galvanic Burst",
+            "source": "Andreya",
+            "subclassShortName": "Lightning Skirmisher",
+            "subclassSource": "Andreya",
+            "className": "Fighter",
+            "classSource": "XPHB",
+            "level": 3,
+            "entries": [
+                "Starting at 3rd level, you have a number of inert galvanic charges equal to your Proficiency Bonus. Immediately after you use your {@subclassFeature Lightning Rod|Fighter|XPHB|Lightning Skirmisher|Andreya|3} feature, you activate one inert charge. When you successfully hit with a melee attack roll, you can expend an active galvanic charge to add {@damage 1d10} lightning damage to the damage roll, rendering the charge inert again. At the start of every short or long rest, you have one active charge of this ability.",
+                "At 10th level in this class, this lightning damage increases to 2d10. At 18th level, it increases to 3d10."
+            ]
+        },
+        {
+            "name": "Flash Point",
+            "source": "Andreya",
+            "subclassShortName": "Lightning Skirmisher",
+            "subclassSource": "Andreya",
+            "className": "Fighter",
+            "classSource": "XPHB",
+            "level": 7,
+            "entries": [
+                "Starting at 7th level, you can channel the very speed of lightning through your being. As a bonus action, you can move an additional 10ft × your proficiency bonus. When you do this, all hostile creatures within 30ft of the point of origin must make a Constitution saving throw against a DC of 12 + your proficiency bonus, or be {@condition blinded|xphb} until the end of their next turn. You can use this feature a number of times equal to your Constitution modifier.",
+                "Additionally, you can now add your Constitution modifier to your Dexterity saving throws."
+            ]
+        },
+        {
+            "name": "Static Chain",
+            "source": "Andreya",
+            "subclassShortName": "Lightning Skirmisher",
+            "subclassSource": "Andreya",
+            "className": "Fighter",
+            "classSource": "XPHB",
+            "level": 10,
+            "entries": [
+                "Starting at 10th level, when using a {@subclassFeature Galvanic Burst|Fighter|XPHB|Lightning Skirmisher|Andreya|3}, the lightning damage dealt can now jump to an additional 3 targets of your choice within 30ft. A target can be a creature or an object and can be targeted by only once per galvanic charge. You do not need to roll to hit these additional targets.",
+                "Additionally, you now have 2 active {@subclassFeature Galvanic Burst|Fighter|XPHB|Lightning Skirmisher|Andreya|3||galvanic charges} after each short or long rest, the damage dealt by using a galvanic charge increases to {@damage 2d10}, and the amount of damage you can reduce from using your {@subclassFeature Lightning Rod|Fighter|XPHB|Lightning Skirmisher|Andreya|3} feature increases to {@damage 2d10}."
+            ]
+        },
+        {
+            "name": "Overcharged",
+            "source": "Andreya",
+            "subclassShortName": "Lightning Skirmisher",
+            "subclassSource": "Andreya",
+            "className": "Fighter",
+            "classSource": "XPHB",
+            "level": 15,
+            "entries": [
+                "Starting at 15th level, you learn to trade accuracy for swift strikes. If you take the {@action Attack} action on your turn, you can spend 2 active {@subclassFeature Galvanic Burst|Fighter|XPHB|Lightning Skirmisher|Andreya|3||galvanic charges} to make one of your attacks into a powerful explosion of lightning energy. Each creature within a 15ft radius sphere around you must make a Dexterity saving throw against a DC of 12 + your proficiency bonus. On a failed save, they take {@damage 6d10} lightning damage. On a success, they take half damage.",
+                "Additionally, you now have 3 active galvanic charges after each short or long rest."
+            ]
+        },
+        {
+            "name": "Grounded Conduit",
+            "source": "Andreya",
+            "subclassShortName": "Lightning Skirmisher",
+            "subclassSource": "Andreya",
+            "className": "Fighter",
+            "classSource": "XPHB",
+            "level": 18,
+            "entries": [
+                "Starting at 18th level, your elemental prowess has allowed you to stave off damage to a more significant degree. You gain immunity to lightning damage, and once per short or long rest you can take no damage when using your {@subclassFeature Lightning Rod|Fighter|XPHB|Lightning Skirmisher|Andreya|3} feature.",
+                "Additionally, the damage dealt by using a {@subclassFeature Galvanic Burst|Fighter|XPHB|Lightning Skirmisher|Andreya|3||galvanic charges} increases to {@damage 3d10}, and the amount of damage you can reduce from using your {@subclassFeature Lightning Rod|Fighter|XPHB|Lightning Skirmisher|Andreya|3} feature increases to {@damage 3sd10}."
             ]
         }
     ],
