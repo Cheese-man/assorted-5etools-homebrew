@@ -1,0 +1,659 @@
+{
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+    "_meta": {
+        "sources": [
+            {
+                "full": "Godhome Campaign Setting",
+                "json": "Godhome",
+                "abbreviation": "Godhome",
+                "version": "1.0.0",
+                "color": "25CAB1",
+                "authors": [
+                    "lucid03"
+                ],
+                "convertedBy": [
+                    "anchovyy"
+                ]
+            }
+        ],
+        "dateAdded": 1750509086458,
+        "dateLastModified": 1750509086458,
+        "edition": "one"
+    },
+    "race": [
+        {
+            "name": "Eiclune",
+            "source": "Godhome",
+            "fluff": {
+                "entries": [
+                    "A race of humanoids who dwell in the depths of the Frane mountain range, Eiclune are a secluded people. With thick white fur covering most of their body and large fangs growing from their mouths, Eiclune are naturally inclined to hunting prey within their snowy domain. Despite this, Eiclune tend to seek out communities outside of the mountains when they reach maturity due to the slow and lonely life that the mountains tend to bring. While the heat is often overwhelming for them, particularly in desert regions, Eiclune never cut their fur, believing it to be a mark of pride."
+                ]
+            },
+            "edition": "one",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "any": 2
+                }
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Acclimated",
+                    "entries": [
+                        "Your body is naturally adapted to the frigid mountains. When in hot climates such as desert or volcanic regions, you have {@variantrule disadvantage|xphb} on skill checks unless you are in shade or a sheltered area."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Dense Fur",
+                    "entries": [
+                        "While not wearing any armor, you gain a +1 bonus to your Armor Class. Additionally, you have resistance to cold damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Hidden Hunter",
+                    "entries": [
+                        "You have {@variantrule advantage|xphb} on all Dexterity ({@skill Stealth}) checks made to hide in cold and mountainous terrain."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Primal Howl",
+                    "entries": [
+                        "As a {@action bonus action}, you can unleash a roar from deep inside you, drawing the attention of nearby creatures. All creatures within 20 feet of you must make a Wisdom saving throw, or else they gain {@variantrule disadvantage|xphb} on attacks made against creatures other than you until the end of their next turn. The DC for this save equals 8 + your proficiency bonus + your Strength score. You can use this ability a number of times equal to your proficiency bonus per {@variantrule long rest|xphb}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Volcari",
+            "source": "Godhome",
+            "fluff": {
+                "entries": [
+                    "Lizard-like people who dwell in the volcanic region of Deius, along the Burnt Ridge. Volcari have adapted to their climate in order to better survive the harsh temperatures. Volcari are a social culture, regularly celebrating individual and collective milestones and historical moments, including the Festival of Ash, Stonecoming, and the Torch Channel."
+                ]
+            },
+            "edition": "one",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30,
+                "climb": 30
+            },
+            "darkvision": 60,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "any": 2
+                }
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Acclimated",
+                    "entries": [
+                        "Your body is naturally adapted to the blistering heat of volcanic ranges. When in cold climates such as a tundra or mountain peaks, you have disadvantage on skill checks unless you are near a source of heat or a sheltered area."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "Due to the time you spend in magma tunnels, your vision in dim conditions has improved. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Magmatic Scales",
+                    "entries": [
+                        "You have resistance to fire damage. Additionally, you are not impeded by extreme heat."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Membranous Grip",
+                    "entries": [
+                        "You have a climbing speed of 30 feet."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Natural Claws",
+                    "entries": [
+                        "You have sharp claws that function as a natural weapon. This weapon has a range of 5 feet, uses your strength score and deals {@damage 1d4} slashing damage and {@damage 1d4} fire damage + your strength modifier on a hit."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kythen",
+            "source": "Godhome",
+            "fluff": {
+                "entries": [
+                    "Kythen dwell in the depths of Deius' oceans. Fish-like people with slitted eyes, webbed fingers and large membrane wings emerging from their back, they are hospitable to anyone who manages to find their homes. Kythen also live in lakes and rivers, although none stay far from a large source of water at any time."
+                ]
+            },
+            "edition": "one",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "darkvision": 60,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "any": 2
+                }
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Amphibious",
+                    "entries": [
+                        "You can breathe in both air and water. Additionally, you gain a swim speed of 30 ft."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Aquatic Lineage",
+                    "entries": [
+                        "You learn the cantrip {@spell Shape Water|XGE} and can cast the spell {@spell Create or Destroy Water|XPHB} once per {@variantrule long rest|xphb}. Additionally, when you reach 5th level, you can cast {@spell Wall of Water|XGE} once per {@variantrule long rest|xphb}. These spells use either your Charisma, Intelligence or Wisdom score, determined when you select this race."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "Your eyes are made to see in the depths of the ocean, improving your vision in darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Shimmering Wings",
+                    "entries": [
+                        "When you move more than 15ft in a straight line while underwater in a turn, you can launch yourself 20ft into the air, provided you are near the surface. Additionally, you take half damage from falling, and only suffer a penalty from falling if you fall further than 20ft."
+                    ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "1": [
+                            "create or destroy water|xphb"
+                        ],
+                        "5": [
+                            "wall of water|xge"
+                        ]
+                    },
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "shape water|xge#c"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Elesharn",
+            "source": "Godhome",
+            "fluff": {
+                "entries": [
+                    "Rulers of the skies of Deius, Elesharn reside in the floating city of Man'shrae. Distrustful and unwelcoming to strangers, little is known about Elesharn culture to those who dwell on the land far below them. A race of people born in the clouds, Elesharn have soft features with lithe forms. Their skin is dappled with patches of translucent aqua which can be seen through, and their eyes are a cloudy white with no pupils."
+                ]
+            },
+            "edition": "one",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "any": 2
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "arcana": true,
+                    "choose": {
+                        "from": [
+                            "religion",
+                            "history"
+                        ]
+                    }
+                }
+            ],
+            "darkvision": 60,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "Used to gazing up at the stars at night, your eyes have become able to see in dim light and darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Heightened Intellect",
+                    "entries": [
+                        "You have advantage on Intelligence saving throws made against spells or other magical effects."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spiritual Mind",
+                    "entries": [
+                        "You are proficient in {@skill Arcana} and one other skill of your choice from {@skill Religion} or {@skill History}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Weightless Form",
+                    "entries": [
+                        "Instead of walking, standing or running, you can instead choose to hover up to 5 feet off the ground. While hovering, your base movement speed becomes 10 ft per round. While hovering this way, if you become knocked prone or more than 5 ft above the ground, the hovering ends and cannot be resumed until you are upright on solid ground. Additionally, you may cast the spell {@spell Feather Fall|XPHB} once per {@variantrule long rest}, targeting yourself only."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Godling",
+            "source": "Godhome",
+            "fluff": {
+                "entries": [
+                    "TODO"
+                ]
+            },
+            "edition": "one",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "any": 2
+                }
+            ],
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Luminar",
+            "source": "Godhome",
+            "fluff": {
+                "entries": [
+                    "The denizens of the Archives and the great writers of fate, Luminar are responsible for the maintenance of the Great Tapestry. An alien looking race with pale, glowing skin, four arms and one large eye in the centre of their forehead, Luminar are truly separated from the continent of Deius. Hairless and with brittle bones, it is considered taboo for a Lumiar to leave the Archives unless a creature whose fate they write has disrupted the Great Tapestry."
+                ]
+            },
+            "edition": "one",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "any": 2
+                }
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Ascendant",
+                    "entries": [
+                        "At the end of each long rest, select a language. You gain the ability to speak, read and write that language until your next {@variantrule long rest|xphb}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Celestial Hue",
+                    "entries": [
+                        "You emit an aura of 30ft of {@variantrule bright light|xphb} at all times."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Heavenly Authority",
+                    "entries": [
+                        "You have advantage on all Charisma ({@skill Persuasion}) and Charisma ({@skill Intimidation}) checks made to convince a creature to help you."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Many Limbs",
+                    "entries": [
+                        "You have two additional arms. Due to the brittleness of your bones, you are unable to hold anything that weighs more than one pound with these extra limbs. You do not gain any benefit to any attack actions you take, even if you are holding additional weapons."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Writers of Fate",
+                    "entries": [
+                        "When you fail an attack roll or saving throw, you may choose to add a bonus to that roll equal to your proficiency bonus, once per long rest."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Angelkin",
+            "source": "Godhome",
+            "fluff": {
+                "entries": [
+                    "When a person completes a tragic fate, they are sometimes offered reincarnation as an Angelkin before moving on to Rayse. The role of an Angelkin is to protect the Archive from threats and maintain the balance of the Great Tapestry. Angelkin are often sent between the different planes to complete these tasks. Angelkin take the form of who they were in their previous life, except with faintly glowing skin and large bird-like wings stretching from their back, as well as ritual markings along their body denoting their duty to the Archives."
+                ]
+            },
+            "edition": "one",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30,
+                "fly": 30
+            },
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "any": 2
+                }
+            ],
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Sublime Essence",
+                    "entries": [
+                        "You have resistance to radiant damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Angelic Spirit",
+                    "entries": [
+                        "Whenever you regain hit points, you regain an additional number equal to your proficiency bonus."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Winged",
+                    "entries": [
+                        "You gain a flying speed of 30 ft."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Hallowed Mind",
+                    "entries": [
+                        "You don’t need to sleep. You must spend at least 4 hours reflecting on the fate of the world in order to complete a long rest."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Chaos-Spawn",
+            "source": "Godhome",
+            "fluff": {
+                "entries": [
+                    "TODO"
+                ]
+            },
+            "edition": "one",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "any": 2
+                }
+            ],
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Fluxborn",
+            "source": "Godhome",
+            "fluff": {
+                "entries": [
+                    "TODO"
+                ]
+            },
+            "edition": "one",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "any": 2
+                }
+            ],
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Kalashtar",
+            "source": "Godhome",
+            "fluff": {
+                "entries": [
+                    "TODO"
+                ]
+            },
+            "edition": "one",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "any": 2
+                }
+            ],
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Vikasha",
+            "source": "Godhome",
+            "fluff": {
+                "entries": [
+                    "TODO"
+                ]
+            },
+            "edition": "one",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "any": 2
+                }
+            ],
+            "entries": [
+                "TODO"
+            ]
+        },
+        {
+            "name": "Galdarian",
+            "source": "Godhome",
+            "fluff": {
+                "entries": [
+                    "TODO"
+                ]
+            },
+            "edition": "one",
+            "creatureTypes": [
+                "humanoid"
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "languageProficiencies": [
+                {
+                    "common": true,
+                    "any": 2
+                }
+            ],
+            "entries": [
+                "TODO"
+            ]
+        }
+    ],
+    "variantrule": [
+        {
+            "name": "Fate",
+            "source": "Godhome",
+            "entries": [
+                "Fate functions as a separate ability score that changes how the world around you reacts to you. Ability checks with Fate are generally used to determine luck in a situation. When determining your starting Fate, your score cannot be less than 1 or greater than 17 - You may either roll a d20 (rounding down as required) or choose a number with the DM that fits your Fatescore (If you are interested in starting with a Fate score of 0, please see the custom backgrounds. Below is a list of the general importance of each Fate score:",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "Fate Score",
+                        "Importance"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 1,
+                                    "max": 3
+                                }
+                            },
+                            "Unimportant, commoners who live life day to day. Will likely never do anything remarkable in their lifetime."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 4,
+                                    "max": 6
+                                }
+                            },
+                            "A small town leader or low level adventurer, unlikely to enact any real change in the world."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 7,
+                                    "max": 10
+                                }
+                            },
+                            "A popular politician or mid level adventurer, with their own story. Their Fate is likely to impact themselves and the community around them."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 11,
+                                    "max": 13
+                                }
+                            },
+                            "Nobility or a strong adventurer who’s Fate may be so grand as to impact a large city or even a country."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 14,
+                                    "max": 15
+                                }
+                            },
+                            "A high level adventurer or a city leader who shapes the world around them, and will be remembered for many years."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 16,
+                                    "max": 17
+                                }
+                            },
+                            "An adventurer of legend, a favoured monarch, someone who will make history and will never fade from memory."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "min": 18,
+                                    "max": 19
+                                }
+                            },
+                            "A force to rival the Gods, a hero who will save the worlds from calamity."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 20
+                                }
+                            },
+                            "Unheard of. Destined for untold glory and greatness."
+                        ]
+                    ]
+                },
+                "Not only does your Fate score change how certain monsters and items interact with you, but it also empowers you. For each 4 points of Fate you have, you may increase any ability score by +1, for a maximum of 24 . However, a number of times equal to the bonuses granted by your Fate score per month, the DM may declare a new result for any dice roll you make. This result cannot be changed in any way.",
+                "Your Fate score can be changed by Gods, spells, magical items, the Archives, and by interacting with others with high Fate scores or grand destinies themselves."
+            ]
+        }
+    ]
+}
