@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "1.8.1",
+                "version": "1.8.2",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1752282496185,
+        "dateLastModified": 1752282627936,
         "edition": "one",
         "spellSchools": {
             "DM": {
@@ -2470,7 +2470,7 @@
                         ],
                         [
                             "3rd",
-                            "{@spell alter self|xphb, {@spell enhance ability|xphb}"
+                            "{@spell alter self|xphb}, {@spell enhance ability|xphb}"
                         ],
                         [
                             "5th",
