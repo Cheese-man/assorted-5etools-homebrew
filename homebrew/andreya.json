@@ -45,6 +45,9 @@
         "internalCopies": [
             "item"
         ],
+        "optionalFeatureTypes": {
+            "ElemB": "Elemental Burst"
+        },
         "status": "wip"
     },
     "class": [
@@ -3773,6 +3776,101 @@
                         "You may choose one creature to make the saving throw with disadvantage."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Water Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When you cast a concentration spell, you can use your reaction to invoke the force of the tides support those around you. All members of your party gain a +1 bonus to attack rolls, armor class, and an increase to their movement speed equal to 10ft. These buffs last 3 rounds. At 5th level, this increases to +2 & 20ft, and at 13th +3 & 30ft. This burst is usable once per {@variantrule long rest|xphb}."
+            ]
+        },
+        {
+            "name": "Chaos Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When you cast a spell that reduces a creature to zero hit points, you absorb some of their magical essence, strengthening you. You can immediately use {@classFeature arcane recovery|Wizard||1}. This does not count towards normal uses of arcane recovery. This burst is usable once per {@variantrule long rest}."
+            ]
+        },
+        {
+            "name": "Fire Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When you cast a healing or buffing spell on a creature you may invoke the fires of passionate love to burn away any semblance of negativity. When invoked you can use a reaction to end a spell effect of 3rd level or lower, or the {@condition blinded}, {@condition deafened}, {@condition poisoned}, {@condition frightened} or {@condition stunned} conditions. This applies to one creature, including yourself. This burst is usable once per {@variantrule long rest}."
+            ]
+        },
+        {
+            "name": "Hill Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When eating food or drinking alcohol, you may invoke the power of gluttony. All hit dice rolled for a {@variantrule short rest} are doubled, and you regain a spell slot equal to half your PB or lower, rounding down. This burst is usable once per {@variantrule long rest}."
+            ]
+        },
+        {
+            "name": "Water Major: Istishia's Impetous",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Must use the {@optfeature Water Minor|Andreya} burst 5 times, and visit a place of significance."
+                }
+            ],
+            "entries": [
+                "The sea churns with an unmistakable strength. When you cast a concentration spell or activate a limited use ability you can use your reaction to invoke the force of the tides support those around you. The members of your party gain +1 to attack rolls, armour class and a 10ft increase to their movement speed. These buffs last 5 rounds. At 5th level, this increases to +2 & 20ft, and at 13th +3 & 30ft. Each person in your party is under the effect of {@spell Freedom of Movement|XPHB} and the party shares a communal use of {@spell Death Ward|XPHB}. This burst is usable once per {@variantrule long rest|xphb}."
+            ]
+        },
+        {
+            "name": "Cloud Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When you cast a spell that debuffs or damages a creature, you can double the range of the spell. When doing this, the creature must make a DC15 Strength saving throw, or fall {@conditoon prone} and take PB × {@damage d6} thunder damage. They take half as much on a success. This burst is usable once per {@variantrule long rest}."
+            ]
+        },
+        {
+            "name": "Blaze Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "The strength of the forge emboldens you. When crafting, you can expend this rune to give a number of creatures equal to your PB {@variantrule advantage} on any rolls made with {@filter tools|items|source=xphb|type=tool;artisan's tools} until the next short or long rest. This burst is usable once per {@variantrule long rest}."
+            ]
+        },
+        {
+            "name": "Ice Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When making an attack roll, you can use a reaction to invoke the quiet chill of unknown entities. The target must make a DC15 Constitution saving throw. On a failed save, the target is frozen, suffering the {@condition paralyzed} condition. They may remake the save at the end of their turns. This burst is usable once per {@variantrule long rest}."
+            ]
+        },
+        {
+            "name": "Earth Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When you hit a creature with a weapon or spell attack, you may use a reaction to invoke the rune of earth, conjuring a series of earthen hands to grasp the target. The attack deals an additional die of damage. In addition, the target must make a DC15 Strength saving throw or be {@condition restrained}, and must take an action to break free. This burst is usable once per {@variantrule long rest}."
             ]
         }
     ],
