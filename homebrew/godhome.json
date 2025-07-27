@@ -72,6 +72,10 @@
                         "As a {@action bonus action}, you can unleash a roar from deep inside you, drawing the attention of nearby creatures. All creatures within 20 feet of you must make a Wisdom saving throw, or else they gain {@variantrule disadvantage|xphb} on attacks made against creatures other than you until the end of their next turn. The DC for this save equals 8 + your proficiency bonus + your Strength score. You can use this ability a number of times equal to your proficiency bonus per {@variantrule long rest|xphb}."
                     ]
                 }
+            ],
+            "traitTags": [
+                "Natural Armor",
+                "Damage Resistance"
             ]
         },
         {
@@ -136,6 +140,10 @@
                         "You have sharp claws that function as a natural weapon. This weapon has a range of 5 feet, uses your strength score and deals {@damage 1d4} slashing damage and {@damage 1d4} fire damage + your strength modifier on a hit."
                     ]
                 }
+            ],
+            "traitTags": [
+                "Damage Resistance",
+                "Natural Weapon"
             ]
         },
         {
@@ -217,6 +225,9 @@
                         ]
                     }
                 }
+            ],
+            "traitTags": [
+                "Amphibious"
             ]
         },
         {
@@ -234,7 +245,11 @@
             "size": [
                 "M"
             ],
-            "speed": 30,
+            "speed": {
+                "walk": 30,
+                "canHover": true,
+                "fly": 10
+            },
             "languageProficiencies": [
                 {
                     "common": true,
@@ -282,6 +297,10 @@
                         "Instead of walking, standing or running, you can instead choose to hover up to 5 feet off the ground. While hovering, your base movement speed becomes 10 ft per round. While hovering this way, if you become knocked prone or more than 5 ft above the ground, the hovering ends and cannot be resumed until you are upright on solid ground. Additionally, you may cast the spell {@spell Feather Fall|XPHB} once per {@variantrule long rest}, targeting yourself only."
                     ]
                 }
+            ],
+            "traitTags": [
+                "Skill Proficiency",
+                "Magic Resistance"
             ]
         },
         {
@@ -289,7 +308,7 @@
             "source": "Godhome",
             "fluff": {
                 "entries": [
-                    "TODO"
+                    "Gods rarely take lovers. And when they do, the odds of producing a child are next to none. But there are a few rare exceptions. These exceptions are called godlings. Born from beings who have defied fate, they have no fate of their own. Godlings are seen as incredibly powerful and desirable; thus young godlings must do their best to stay hidden or else risk kidnapping, ritual sacrifice, or worse."
                 ]
             },
             "edition": "one",
@@ -300,6 +319,7 @@
                 "M"
             ],
             "speed": 30,
+            "darkvision": 60,
             "languageProficiencies": [
                 {
                     "common": true,
@@ -307,7 +327,38 @@
                 }
             ],
             "entries": [
-                "TODO"
+                {
+                    "name": "Blessed Parentage",
+                    "type": "entries",
+                    "entries": [
+                        "You gain proficiency in the {@skill Religion} skill."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Divine Sight",
+                    "entries": [
+                        "You have 60ft of {@sense darkvision}. You have {@variantrule advantage} on all {@skill Perception} checks, and all {@skill Investigation} checks made to determine whether something is an illusion."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fateless",
+                    "entries": [
+                        "Your starting {@variantrule Fate|Godhome} score is 0."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Potent Blood",
+                    "entries": [
+                        "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Skill Proficiency",
+                "Uncommon Race"
             ]
         },
         {
@@ -365,9 +416,12 @@
                     "type": "entries",
                     "name": "Writers of Fate",
                     "entries": [
-                        "When you fail an attack roll or saving throw, you may choose to add a bonus to that roll equal to your proficiency bonus, once per long rest."
+                        "When you fail an attack roll or saving throw, you may choose to add a bonus to that roll equal to your proficiency bonus, once per {@variantrule long rest}."
                     ]
                 }
+            ],
+            "traitTags": [
+                "Language Proficiency"
             ]
         },
         {
@@ -421,9 +475,13 @@
                     "type": "entries",
                     "name": "Hallowed Mind",
                     "entries": [
-                        "You don’t need to sleep. You must spend at least 4 hours reflecting on the fate of the world in order to complete a long rest."
+                        "You don't need to sleep. You must spend at least 4 hours reflecting on the fate of the world in order to complete a {@variantrule long rest}."
                     ]
                 }
+            ],
+            "traitTags": [
+                "Damage Resistance",
+                "Improved Resting"
             ]
         },
         {
@@ -431,33 +489,149 @@
             "source": "Godhome",
             "fluff": {
                 "entries": [
-                    "TODO"
+                    "Humanoids trapped in Oru often find their bodies shifting, infused with wild magic. Those who remain long enough for this process to be completed become Chaos-Spawn. No two Chaos-Spawn look the same, wildly varying in appearance and temperament."
                 ]
             },
             "edition": "one",
             "creatureTypes": [
-                "humanoid"
+                "elemental"
             ],
             "size": [
                 "M"
             ],
-            "speed": 30,
+            "speed": {
+                "walk": 30,
+                "choose": {
+                    "from": [
+                        "fly",
+                        "swim",
+                        "climb"
+                    ],
+                    "amount": 1
+                }
+            },
             "languageProficiencies": [
                 {
                     "common": true,
                     "any": 2
                 }
             ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "1": [
+                            "absorb elements|xge"
+                        ]
+                    },
+                    "ability": {
+                        "choose": [
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "known": {
+                        "1": [
+                            "shape water|xge#c",
+                            "gust|xge#c",
+                            "control flames|xge#c",
+                            "mold earth|xge#c"
+                        ]
+                    }
+                }
+            ],
             "entries": [
-                "TODO"
-            ]
+                {
+                    "type": "entries",
+                    "name": "Altered Anatomy",
+                    "entries": [
+                        "Your creature type is Elemental."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Improved Movement",
+                    "entries": [
+                        "When you take this race, you gain one of the following movement options:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "You gain a flying speed of 30 feet.",
+                                "You gain a swimming speed of 30 feet.",
+                                "You gain a climbing speed of 30 feet."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Reactive Form",
+                    "entries": [
+                        "You may cast the spell {@spell Absorb Elements|xge} once per {@variantrule long rest} without requiring a spell slot. If you have the spellcasting ability, you may cast this spell with any spell slots you have of the appropriate level."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Unstable",
+                    "entries": [
+                        "At the end of a {@variantrule long rest}, roll once on the Elemental Powers table. You gain the associated cantrip until your next long rest. Select Intelligence, Wisdom or Charisma to be your spellcasting ability for these cantrips, chosen when you take this race.",
+                        {
+                            "type": "table",
+                            "name": "Elemental Powers",
+                            "colLabels": [
+                                "{@dice d4}",
+                                "Cantrip"
+                            ],
+                            "rows": [
+                                [
+                                    {
+                                        "type": "cell",
+                                        "roll": {
+                                            "exact": 1
+                                        }
+                                    },
+                                    "{@spell Control Flames|XGE}"
+                                ],
+                                [
+                                    {
+                                        "type": "cell",
+                                        "roll": {
+                                            "exact": 2
+                                        }
+                                    },
+                                    "{@spell Gust|XGE}"
+                                ],
+                                [
+                                    {
+                                        "type": "cell",
+                                        "roll": {
+                                            "exact": 3
+                                        }
+                                    },
+                                    "{@spell Mold Earth|XGE}"
+                                ],
+                                [
+                                    {
+                                        "type": "cell",
+                                        "roll": {
+                                            "exact": 4
+                                        }
+                                    },
+                                    "{@spell Shape Water|XGE}"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "traitTags": []
         },
         {
             "name": "Fluxborn",
             "source": "Godhome",
             "fluff": {
                 "entries": [
-                    "TODO"
+                    "Fluxborn are unstable beings created out of pure magic in the heart of Oru. There is no rhyme or reason for the creation of a Fluxborn, but they will not last long. Fluxborn have no reproductive organs and typically are drawn to a more hedonistic lifestyle, eager to experience all of what life has before they return to Oru. The death of a Fluxborn when their lifeforce runs out always results in a highly destructive burst of magic."
                 ]
             },
             "edition": "one",
@@ -468,6 +642,7 @@
                 "M"
             ],
             "speed": 30,
+            "darkvision": 60,
             "languageProficiencies": [
                 {
                     "common": true,
@@ -475,7 +650,39 @@
                 }
             ],
             "entries": [
-                "TODO"
+                {
+                    "type": "entries",
+                    "name": "Created Life",
+                    "entries": [
+                        "You do not need to sleep, eat or breathe. You must have at least 4 hours of uninterrupted meditation to connect to the chaos of Oru to complete a {@variantrule long rest}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "The raw magic flowing through your blood enhances your senses and sight. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cant discern color in darkness, only shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Made to End",
+                    "entries": [
+                        "You have resistance to necrotic damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Magical Essence",
+                    "entries": [
+                        "You have {@variantrule advantage} on saving throws against spells and magical effects. In addition, you have advantage on all saving throws against {@condition charmed||charm} effects and are immune to magical sleep."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Improved Resting",
+                "Damage Resistance",
+                "Condition Immunity"
             ]
         },
         {
