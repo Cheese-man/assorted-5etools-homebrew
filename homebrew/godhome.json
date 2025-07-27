@@ -686,37 +686,11 @@
             ]
         },
         {
-            "name": "Kalashtar",
-            "source": "Godhome",
-            "fluff": {
-                "entries": [
-                    "TODO"
-                ]
-            },
-            "edition": "one",
-            "creatureTypes": [
-                "humanoid"
-            ],
-            "size": [
-                "M"
-            ],
-            "speed": 30,
-            "languageProficiencies": [
-                {
-                    "common": true,
-                    "any": 2
-                }
-            ],
-            "entries": [
-                "TODO"
-            ]
-        },
-        {
             "name": "Vikasha",
             "source": "Godhome",
             "fluff": {
                 "entries": [
-                    "TODO"
+                    "Humanoids rarely enter the Astral Plane, but when they do, the mental energies and psychic storms begin to alter their forms and minds. Now more in touch with their mind and granted new psychic abilities, Vikasha feed upon the mental energy of others. Gaunt and with swirling, almost hypnotic eyes, they are indistinguishable from normal humanoids unless closely observed."
                 ]
             },
             "edition": "one",
@@ -734,7 +708,36 @@
                 }
             ],
             "entries": [
-                "TODO"
+                {
+                    "type": "entries",
+                    "name": "Hidden Conscious",
+                    "entries": [
+                        "As an action, while inside a dense crowd of people, you may turn {@condition invisible}. While invisible, humanoids within the crowd cannot sense your presence unless you intentionally touch them. This invisibility lasts for 1 minute, or until you make an attack, cast a spell or exit the crowd. You may do this a number of times equal to your proficiency bonus per {@variantrule long rest}.",
+                        "TODO: Confirm if per long rest"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Psyche Remade",
+                    "entries": [
+                        "You have {@variantrule advantage} on death saving throws."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Psychic Bite",
+                    "entries": [
+                        "TODO: Int score or modifier?",
+                        "Transformed by the Astral Plane, you can lash out mentally as a creature. As a bonus action, you may force one creature you can see within 30 feet of you to make a Wisdom saving throw. On a failure, they take 3d6 psychic damage, and you gain a number of temporary hit points equal to half the damage dealt. The DC for this save equals 8 + your proficiency bonus + your Intelligence score. You may use this ability once per long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Hypnotic Link",
+                    "entries": [
+                        "You have advantage on Charisma ({@skill Persuasion}) checks against humanoids."
+                    ]
+                }
             ]
         },
         {
@@ -742,7 +745,7 @@
             "source": "Godhome",
             "fluff": {
                 "entries": [
-                    "TODO"
+                    "Creatures shaped by the ancient matter of life within the astral plane, Galdarians are tall and warped beings. Many of their features resemble that of the material plane’s sea creatures. Galdarians are typically slow and relaxed, rarely leaving the astral sea as there is little perceived need to do so. However, occasionally a Galdarian will fall through a portal leading to the Material Plane."
                 ]
             },
             "edition": "one",
@@ -752,7 +755,10 @@
             "size": [
                 "M"
             ],
-            "speed": 30,
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
             "languageProficiencies": [
                 {
                     "common": true,
@@ -760,7 +766,30 @@
                 }
             ],
             "entries": [
-                "TODO"
+                {
+                    "type": "entries",
+                    "name": "Creature of the Depths",
+                    "entries": [
+                        "You do not need to breathe, and you gain a swim speed equal to your walking speed."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Primordial Legacy",
+                    "entries": [
+                        "You have resistance to cold damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Shifting Form",
+                    "entries": [
+                        "TODO"
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Damage Resistance"
             ]
         }
     ],
