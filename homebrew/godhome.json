@@ -6,7 +6,7 @@
                 "full": "Godhome Campaign Setting",
                 "json": "Godhome",
                 "abbreviation": "Godhome",
-                "version": "0.0.0",
+                "version": "1.0.0",
                 "color": "25CAB1",
                 "authors": [
                     "lucid03"
@@ -17,7 +17,7 @@
             }
         ],
         "dateAdded": 1750509086458,
-        "dateLastModified": 1750509086458,
+        "dateLastModified": 1753596384852,
         "edition": "one"
     },
     "race": [
@@ -712,8 +712,7 @@
                     "type": "entries",
                     "name": "Hidden Conscious",
                     "entries": [
-                        "As an action, while inside a dense crowd of people, you may turn {@condition invisible}. While invisible, humanoids within the crowd cannot sense your presence unless you intentionally touch them. This invisibility lasts for 1 minute, or until you make an attack, cast a spell or exit the crowd. You may do this a number of times equal to your proficiency bonus per {@variantrule long rest}.",
-                        "TODO: Confirm if per long rest"
+                        "As an action, while inside a dense crowd of people, you may turn {@condition invisible}. While invisible, humanoids within the crowd cannot sense your presence unless you intentionally touch them. This invisibility lasts for 1 minute, or until you make an attack, cast a spell or exit the crowd. You may do this a number of times equal to your proficiency bonus per {@variantrule long rest}."
                     ]
                 },
                 {
@@ -727,8 +726,7 @@
                     "type": "entries",
                     "name": "Psychic Bite",
                     "entries": [
-                        "TODO: Int score or modifier?",
-                        "Transformed by the Astral Plane, you can lash out mentally as a creature. As a bonus action, you may force one creature you can see within 30 feet of you to make a Wisdom saving throw. On a failure, they take 3d6 psychic damage, and you gain a number of temporary hit points equal to half the damage dealt. The DC for this save equals 8 + your proficiency bonus + your Intelligence score. You may use this ability once per long rest."
+                        "Transformed by the Astral Plane, you can lash out mentally as a creature. As a bonus action, you may force one creature you can see within 30 feet of you to make a Wisdom saving throw. On a failure, they take 3d6 psychic damage, and you gain a number of temporary hit points equal to half the damage dealt. The DC for this save equals 8 + your proficiency bonus + your Intelligence modifier. You may use this ability once per long rest."
                     ]
                 },
                 {
@@ -784,7 +782,54 @@
                     "type": "entries",
                     "name": "Shifting Form",
                     "entries": [
-                        "TODO"
+                        "At the end of each long rest, choose one transformation to alter your body. This change lasts until your next long rest. You unlock more options for transformations at level 5.",
+                        {
+                            "name": "At level 1:",
+                            "type": "list",
+                            "items": [
+                                {
+                                    "type": "item",
+                                    "name": "Gargantuan",
+                                    "entry": "Your size becomes Large."
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Suction Cups",
+                                    "entry": "You have climb speed equal to your walk speed."
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Shifting Skin",
+                                    "entry": "You can change the colour of your skin or make patterns appear on it. As an action, you can change your skin to match the colour and texture of your surroundings, giving you advantage on {@skill Stealth} checks made to hide in those surroundings"
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Darkvision",
+                                    "entry": "You gain 30 ft of {@sense Darkvision}."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "At level 5:",
+                            "type": "list",
+                            "items": [
+                                {
+                                    "type": "item",
+                                    "name": "Eyeless Sight",
+                                    "entry": "You gain an additional 20 ft of {@sense Blindsight}."
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Hydrostatic Skeleton",
+                                    "entry": "You gain resistance to non-magical bludgeoning damage. In addition, you can squeeze through gaps that are no smaller than 1 inch, provided you are not carrying any equipment on you."
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Cecaelia Tentacles",
+                                    "entry": "You grow 2d4 tentacles from your waist. These tentacles cannot carry anything heavier than 1 pound and have a reach of 5 ft. You may take the Interact with Object action as a bonus action."
+                                }
+                            ]
+                        }
                     ]
                 }
             ],
