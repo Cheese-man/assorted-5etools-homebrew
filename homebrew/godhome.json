@@ -6,7 +6,7 @@
                 "full": "Godhome Campaign Setting",
                 "json": "Godhome",
                 "abbreviation": "Godhome",
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "color": "25CAB1",
                 "authors": [
                     "lucid03"
@@ -17,7 +17,7 @@
             }
         ],
         "dateAdded": 1750509086458,
-        "dateLastModified": 1753596384852,
+        "dateLastModified": 1753596874769,
         "edition": "one"
     },
     "race": [
@@ -294,7 +294,7 @@
                     "type": "entries",
                     "name": "Weightless Form",
                     "entries": [
-                        "Instead of walking, standing or running, you can instead choose to hover up to 5 feet off the ground. While hovering, your base movement speed becomes 10 ft per round. While hovering this way, if you become knocked prone or more than 5 ft above the ground, the hovering ends and cannot be resumed until you are upright on solid ground. Additionally, you may cast the spell {@spell Feather Fall|XPHB} once per {@variantrule long rest}, targeting yourself only."
+                        "Instead of walking, standing or running, you can instead choose to hover up to 5 feet off the ground. While hovering, your base movement speed becomes 10 ft per round. While hovering this way, if you become knocked prone or more than 5 ft above the ground, the hovering ends and cannot be resumed until you are upright on solid ground. Additionally, you may cast the spell {@spell Feather Fall|XPHB} once per {@variantrule long rest|xphb}, targeting yourself only."
                     ]
                 }
             ],
@@ -416,7 +416,7 @@
                     "type": "entries",
                     "name": "Writers of Fate",
                     "entries": [
-                        "When you fail an attack roll or saving throw, you may choose to add a bonus to that roll equal to your proficiency bonus, once per {@variantrule long rest}."
+                        "When you fail an attack roll or saving throw, you may choose to add a bonus to that roll equal to your proficiency bonus, once per {@variantrule long rest|xphb}."
                     ]
                 }
             ],
@@ -475,7 +475,7 @@
                     "type": "entries",
                     "name": "Hallowed Mind",
                     "entries": [
-                        "You don't need to sleep. You must spend at least 4 hours reflecting on the fate of the world in order to complete a {@variantrule long rest}."
+                        "You don't need to sleep. You must spend at least 4 hours reflecting on the fate of the world in order to complete a {@variantrule long rest|xphb}."
                     ]
                 }
             ],
@@ -567,14 +567,14 @@
                     "type": "entries",
                     "name": "Reactive Form",
                     "entries": [
-                        "You may cast the spell {@spell Absorb Elements|xge} once per {@variantrule long rest} without requiring a spell slot. If you have the spellcasting ability, you may cast this spell with any spell slots you have of the appropriate level."
+                        "You may cast the spell {@spell Absorb Elements|xge} once per {@variantrule long rest|xphb} without requiring a spell slot. If you have the spellcasting ability, you may cast this spell with any spell slots you have of the appropriate level."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Unstable",
                     "entries": [
-                        "At the end of a {@variantrule long rest}, roll once on the Elemental Powers table. You gain the associated cantrip until your next long rest. Select Intelligence, Wisdom or Charisma to be your spellcasting ability for these cantrips, chosen when you take this race.",
+                        "At the end of a {@variantrule long rest|xphb}, roll once on the Elemental Powers table. You gain the associated cantrip until your next long rest. Select Intelligence, Wisdom or Charisma to be your spellcasting ability for these cantrips, chosen when you take this race.",
                         {
                             "type": "table",
                             "name": "Elemental Powers",
@@ -654,7 +654,7 @@
                     "type": "entries",
                     "name": "Created Life",
                     "entries": [
-                        "You do not need to sleep, eat or breathe. You must have at least 4 hours of uninterrupted meditation to connect to the chaos of Oru to complete a {@variantrule long rest}."
+                        "You do not need to sleep, eat or breathe. You must have at least 4 hours of uninterrupted meditation to connect to the chaos of Oru to complete a {@variantrule long rest|xphb}."
                     ]
                 },
                 {
@@ -712,7 +712,7 @@
                     "type": "entries",
                     "name": "Hidden Conscious",
                     "entries": [
-                        "As an action, while inside a dense crowd of people, you may turn {@condition invisible}. While invisible, humanoids within the crowd cannot sense your presence unless you intentionally touch them. This invisibility lasts for 1 minute, or until you make an attack, cast a spell or exit the crowd. You may do this a number of times equal to your proficiency bonus per {@variantrule long rest}."
+                        "As an action, while inside a dense crowd of people, you may turn {@condition invisible}. While invisible, humanoids within the crowd cannot sense your presence unless you intentionally touch them. This invisibility lasts for 1 minute, or until you make an attack, cast a spell or exit the crowd. You may do this a number of times equal to your proficiency bonus per {@variantrule long rest|xphb}."
                     ]
                 },
                 {
