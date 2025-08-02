@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "1.9.1",
+                "version": "1.9.2",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1753584393816,
+        "dateLastModified": 1754125103495,
         "edition": "one",
         "spellSchools": {
             "DM": {
@@ -1727,7 +1727,7 @@
                         ],
                         [
                             "3rd",
-                            "{@spell gentle repose|xphb, {@spell wither and bloom|scc}"
+                            "{@spell gentle repose|xphb}, {@spell wither and bloom|scc}"
                         ],
                         [
                             "5th",
@@ -2134,7 +2134,7 @@
                         ],
                         [
                             "3rd",
-                            "{@spell aid|xphb, {@spell lesser restoration|xphb}"
+                            "{@spell aid|xphb}, {@spell lesser restoration|xphb}"
                         ],
                         [
                             "5th",
@@ -2304,7 +2304,7 @@
                         ],
                         [
                             "3rd",
-                            "{@spell mirror image|xphb, {@spell nathair's mischief|ftd}"
+                            "{@spell mirror image|xphb}, {@spell nathair's mischief|ftd}"
                         ],
                         [
                             "5th",
