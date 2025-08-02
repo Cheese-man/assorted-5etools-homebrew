@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "1.9.2",
+                "version": "1.9.3",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1754125103495,
+        "dateLastModified": 1754125770805,
         "edition": "one",
         "spellSchools": {
             "DM": {
@@ -1198,7 +1198,7 @@
                 "Spiritual Successor|Thaumaturge|Andreya|Soulkeeper|Andreya|14"
             ],
             "subclassSpells": [
-                "cause fear|xphb",
+                "cause fear|xge",
                 "inflict wounds|xphb",
                 "gentle repose|xphb",
                 "wither and bloom|scc",
