@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "1.9.3",
+                "version": "1.9.4",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1754125770805,
+        "dateLastModified": 1754305793476,
         "edition": "one",
         "spellSchools": {
             "DM": {
@@ -2331,8 +2331,8 @@
             "subclassSource": "Andreya",
             "level": 3,
             "entries": [
-                "By expending a use of this feature, you gain insight into a creature's desires.",
-                "If what they seek is a feeling or idea, you will learn what it is, but won't recieve context. For example, you might learn that a creature desires wealth, but you won't learn that they're trying to pay off gambling debts.",
+                "By expending a use of this feature, you gain insight into a creature's desires as a free action.",
+                "If what they seek is a feeling or idea, you will learn what it is, but won't recieve context. For example, For example, you may be able to tell a creature is feeling anguish and loss and seeking comfort, but this wont tell you that their mother has died.",
                 "If what they seek is material, you will recieve a rough visualization (including size and shape) of the object, but not what it is or does, unless the you are familiar with the object.",
                 "You can use this feature a number of times equal to your proficiency bonus per {@variantrule long rest|xphb}. Spells and other effects that cloud a creature's thoughts (such as {@spell Mind Blank|XPHB}) shield a creature from this ability."
             ]
@@ -2387,8 +2387,8 @@
             "subclassSource": "Andreya",
             "level": 10,
             "entries": [
-                "You may conjure an illusion that requires an active DC20 Intelligence ({@skill Investigation|XPHB}) check to see through. This illusion looks and feels real, and lasts for up to one hour.",
-                "If you have used {@subclassFeature Wishful Fantasy|Thaumaturge|Andreya|Dreamweaver|Andreya|3} on a creature, you can use the information obtained to conjure something close to what their desires represent, and impose {@variantrule disadvantage|XPHB} on any skill checks they make to see through the illusion."
+                "By expending 2 uses of your {@subclassFeature Wishful Fantasy|Thaumaturge|Andreya|Dreamweaver|Andreya|3} feature, you may use your action to conjure an illusion that requires an active DC20 Intelligence ({@skill Investigation|XPHB}) check to see through. This illusion looks and feels real, and lasts for up to one hour.",
+                "If you have used {@subclassFeature Wishful Fantasy|Thaumaturge|Andreya|Dreamweaver|Andreya|3} on a creature within the last hour, you can use the information obtained to conjure something close to what their desires represent, and impose {@variantrule disadvantage|XPHB} on any skill checks they make to see through the illusion."
             ]
         },
         {
