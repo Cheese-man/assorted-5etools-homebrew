@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "1.9.4",
+                "version": "1.10.0",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1754305793476,
+        "dateLastModified": 1754659078532,
         "edition": "one",
         "spellSchools": {
             "DM": {
@@ -3871,6 +3871,16 @@
             ],
             "entries": [
                 "When you hit a creature with a weapon or spell attack, you may use a reaction to invoke the rune of earth, conjuring a series of earthen hands to grasp the target. The attack deals an additional die of damage. In addition, the target must make a DC15 Strength saving throw or be {@condition restrained}, and must take an action to break free. This burst is usable once per {@variantrule long rest}."
+            ]
+        },
+        {
+            "name": "Stone Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When receiving damage, you may invoke the power of the runeshapers. You are resistant to all damage until the start of your next turn. This burst is usable once per {@variantrule long rest}."
             ]
         }
     ],
