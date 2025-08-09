@@ -961,9 +961,141 @@
                     "amount": 500
                 }
             },
+            "components": {
+                "v": true,
+                "m": "A compass needle"
+            },
             "entries": [
                 "A glowing compass appears in front of you, pointing to a location of your choice within the spell’s range. You must either know the general direction of the location or be familiar with the location. You may also specify a non-specific location such as a shop or inn, in which case the compass will point towards the nearest location that matches that description."
-            ]
+            ],
+            "entriesHigherLevel": [
+                "This spell's range increases to 1000 ft at 5th level, 2500 ft at 11th level and 1 mile at 17th level."
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Spiritual Discernment",
+            "source": "Godhome",
+            "school": "D",
+            "level": 0,
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entries": [
+                "You touch one creature for a minute in order to sense its alignment. If that creature is unwilling or unaware of this spell being cast on it, it must make a Wisdom saving throw. On a success, you do not learn of its alignment."
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Transmute Alcohol",
+            "level": 0,
+            "source": "Andreya",
+            "school": "T",
+            "time": [
+                {
+                    "unit": "minute",
+                    "number": 1
+                }
+            ],
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "entries": [
+                "You transform 5 ounces of clean water into an alcoholic substance of your choice."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "source": "TCE",
+                        "name": "Artificer"
+                    },
+                    {
+                        "source": "XPHB",
+                        "name": "Bard"
+                    },
+                    {
+                        "source": "XPHB",
+                        "name": "Cleric"
+                    },
+                    {
+                        "source": "XPHB",
+                        "name": "Sorcerer"
+                    },
+                    {
+                        "source": "XPHB",
+                        "name": "Wizard"
+                    }
+                ]
+            }
         }
     ]
 }
