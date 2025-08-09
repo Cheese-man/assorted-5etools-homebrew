@@ -366,7 +366,7 @@
             "source": "Godhome",
             "fluff": {
                 "entries": [
-                    "The denizens of the Archives and the great writers of fate, Luminar are responsible for the maintenance of the Great Tapestry. An alien looking race with pale, glowing skin, four arms and one large eye in the centre of their forehead, Luminar are truly separated from the continent of Deius. Hairless and with brittle bones, it is considered taboo for a Lumiar to leave the Archives unless a creature whose fate they write has disrupted the Great Tapestry."
+                    "The denizens of the Archives and the great writers of fate, Luminar are responsible for the maintenance of the Great Tapestry. An alien looking race with pale, glowing skin, four arms and one large eye in the centre of their forehead, Luminar are truly separated from the continent of Deius. Hairless and with brittle bones, it is considered taboo for a Luminar to leave the Archives unless a creature whose fate they write has disrupted the Great Tapestry."
                 ]
             },
             "edition": "one",
@@ -934,6 +934,35 @@
                 },
                 "Not only does your Fate score change how certain monsters and items interact with you, but it also empowers you. For each 4 points of Fate you have, you may increase any ability score by +1, for a maximum of 24 . However, a number of times equal to the bonuses granted by your Fate score per month, the DM may declare a new result for any dice roll you make. This result cannot be changed in any way.",
                 "Your Fate score can be changed by Gods, spells, magical items, the Archives, and by interacting with others with high Fate scores or grand destinies themselves."
+            ]
+        }
+    ],
+    "spell": [
+        {
+            "name": "Magic Compass",
+            "source": "Godhome",
+            "school": "D",
+            "level": 0,
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 500
+                }
+            },
+            "entries": [
+                "A glowing compass appears in front of you, pointing to a location of your choice within the spell’s range. You must either know the general direction of the location or be familiar with the location. You may also specify a non-specific location such as a shop or inn, in which case the compass will point towards the nearest location that matches that description."
             ]
         }
     ]
