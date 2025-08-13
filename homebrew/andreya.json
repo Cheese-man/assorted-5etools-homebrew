@@ -1537,8 +1537,7 @@
                 "Oath of the Scalebearers|Paladin|XPHB|Scalebearers|Andreya|3",
                 "Aura of Sight|Paladin|XPHB|Scalebearers|Andreya|7",
                 "Superior Scales|Paladin|XPHB|Scalebearers|Andreya|15",
-                "Aura of Sight (18th Level)|Paladin|XPHB|Scalebearers|Andreya|18",
-                "Path of the Dragon|Paladin|XPHB|Scalebearers|Andreya|20"
+                "Draconic Vessel|Paladin|XPHB|Scalebearers|Andreya|20"
             ],
             "subclassSpells": [
                 "grease|xphb",
@@ -3033,7 +3032,7 @@
             "subclassSource": "Andreya",
             "level": 3,
             "entries": [
-                "The Oath of the Scalebearers calls to the nomadic warriors of Titan, protectors of their homeland and defenders of great creatures of myth who are in need of protection.  Harnessing the very power of those being their sworn to watch over, paladins who swear this oath stand against those who would try to hunt these creatures for sport, or means more nefarious.",
+                "The Oath of the Scalebearers calls to the nomadic warriors of Titan, protectors of their homeland and defenders of great creatures of myth who are in need of protection. Harnessing the very power of the beings they have sworn to watch over, paladins who swear this oath stand against those who would try to hunt these creatures for sport, or means more nefarious.",
                 "Such guardians believe in the beauty of the creatures of the world, often making offerings and prayers to entities or deities such as Bahamut and Helm who influence Justice and Protection. At the same time, they answer the call to hunt those unnatural creatures that too often seek to wretch control over the natural order with ill intent, bringing terror to the cycle of life as we know it.",
                 {
                     "type": "refSubclassFeature",
@@ -3042,10 +3041,6 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Draconic Weapon|Paladin|XPHB|Scalebearers|Andreya|3"
-                },
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Chromatic Fervor|Paladin|XPHB|Scalebearers|Andreya|3"
                 }
             ]
         },
@@ -3109,24 +3104,8 @@
                 "amount": 1
             },
             "entries": [
-                "As a {@action Magic|XPHB} action, you can expend one use of your Channel Divinity to enchant one weapon that you wield with a type of elemental damage. For 10 minutes, you may add {@damage 1d8} of this damage to all melee attacks made with this weapon."
-            ]
-        },
-        {
-            "name": "Chromatic Fervor",
-            "source": "Andreya",
-            "className": "Paladin",
-            "classSource": "XPHB",
-            "subclassShortName": "Scalebearers",
-            "subclassSource": "Andreya",
-            "level": 3,
-            "header": 2,
-            "consumes": {
-                "name": "Channel Divinity",
-                "amount": 1
-            },
-            "entries": [
-                "After you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action and gain one elemental resistance of your choice. This resistance persists until the end of combat."
+                "As a {@action Magic|XPHB} action, you can expend one use of Channel Divinity to enchant one weapon that you wield with draconic energy. For 10 minutes or until you use this feature again, you may add an additional {@damage 1d8} of damage to all melee attacks made with this weapon. The type of this damage is acid, cold, fire, lightning, or poison, chosen each time you use this feature. You also gain {@variantrule resistance|XPHB} to your chosen damage type for the duration.",
+                "You can end this effect early (no action required). This effect also ends early if you aren't carrying the weapon."
             ]
         },
         {
@@ -3138,7 +3117,8 @@
             "subclassSource": "Andreya",
             "level": 7,
             "entries": [
-                "You emanate an aura that grants you and your companions dragon-like vision, allowing you to see even the most hidden things. You gain 10ft of {@sense Truesight}. In addition, if you aren't {@condition incapacitated|xphb}, any ally who starts their turn within 10 feet of you gains this benefit as well."
+                "TODO: Fix grammar",
+                "You and your allies can see invisible things that are within your {@classFeature Aura of Protection|Paladin||6}. Further, your enemies are unable to benefit from the {@condition invisible} condition while in your Aura of Protection. If an invisible enemy enters the aura, that condition has no effect on that ally while there."
             ]
         },
         {
@@ -3150,24 +3130,13 @@
             "subclassSource": "Andreya",
             "level": 15,
             "entries": [
-                "When you make a saving throw against a spell or effect that deals elemental damage, you can use your reaction to absorb some of the damage dealt. On a failed save, the damage dealt to you is zero and on a success, you gain {@variantrule temporary hit points|XPHB} equal to half the damage total, to a maximum of 50 temporary hit points.",
-                "This feature can be used once per long rest."
+                "TODO: Rephrase success/failure?",
+                "When you make a saving throw against a spell or effect that deals acid, cold, fire, lightning, or poison damage, you can use your reaction to absorb some of the damage dealt. On a failed save, the damage dealt to you is zero and on a success, you gain {@variantrule temporary hit points|XPHB} equal to half the damage total, to a maximum of 50 temporary hit points.",
+                "This feature can be used once per {@variantrule long rest|XPHB}."
             ]
         },
         {
-            "name": "Aura of Sight (18th Level)",
-            "source": "Andreya",
-            "className": "Paladin",
-            "classSource": "XPHB",
-            "subclassShortName": "Scalebearers",
-            "subclassSource": "Andreya",
-            "level": 18,
-            "entries": [
-                "When you reach 18th level in this class, the range of your {@subclassFeature Aura of Sight|Paladin|XPHB|Scalebearers|Andreya|3} increases to 30 feet."
-            ]
-        },
-        {
-            "name": "Path of the Dragon",
+            "name": "Draconic Vessel",
             "source": "Andreya",
             "className": "Paladin",
             "classSource": "XPHB",
@@ -3175,16 +3144,27 @@
             "subclassSource": "Andreya",
             "level": 20,
             "entries": [
-                "You can empower yourself with the power of those you are sworn to defend. As a bonus action, you gain the following benefits for 1 minute:",
+                "You can empower yourself with the power of those you are sworn to defend. As a bonus action, you gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a {@variantrule long rest|XHPB}. You can also restore your use of it by expending a level 5 spell slot (no action required).",
                 {
                     "type": "list",
                     "items": [
-                        "If your Armor Class was less than 22, it is raised to 22.",
-                        "You gain resistance to all elemental damage.",
-                        "You can make Strength and Constitution saving throws at advantage against effects and spells you can see."
+                        {
+                            "type": "item",
+                            "name": "Chromatic Ward",
+                            "entry": "You gain {@variantrule resistance|XPHB} to acid, cold, fire, lightning and poison damage."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Keen Senses",
+                            "entry": "You have {@variantrule advantage|XPHB} on {@skill Perception} and {@skill Stealth} skill checks. "
+                        },
+                        {
+                            "type": "item",
+                            "name": "Steadfast",
+                            "entry": "You can make Strength and Constitution saving throws against effects and spells you can see at {@variantrule advantage|XPHB}."
+                        }
                     ]
-                },
-                "This effect ends early if you become {@condition incapacitated|xphb}, or die. Once you use this feature, you can't use it again until you finish a long rest."
+                }
             ]
         },
         {
