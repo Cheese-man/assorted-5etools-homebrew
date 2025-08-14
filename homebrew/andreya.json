@@ -1720,6 +1720,56 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "Wildspirit Patron",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "shortName": "Wildspirit",
+            "subclassFeatures": [
+                "Wildspirit Patron|Warlock|XPHB|Wildspirit|Andreya|3",
+                "Mountain's Resolve|Warlock|XPHB|Wildspirit|Andreya|6",
+                "Arctic's Burden|Warlock|XPHB|Wildspirit|Andreya|6",
+                "Swamp's Nourishment|Warlock|XPHB|Wildspirit|Andreya|10",
+                "Forest's Curse|Warlock|XPHB|Wildspirit|Andreya|14"
+            ],
+            "subclassSpells": [
+                "speak with animals|xphb",
+                "entangle|xphb",
+                "barkskin|xphb",
+                "pass without trace|xphb",
+                "call lightning|xphb",
+                "speak with plants|xphb",
+                "stoneskin|xphb",
+                "freedom of movement|xphb",
+                "commune with nature|xphb",
+                "tree stride|xphb"
+            ],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "speak with animals|xphb",
+                            "entangle|xphb",
+                            "barkskin|xphb",
+                            "pass without trace|xphb"
+                        ],
+                        "5": [
+                            "call lightning|xphb",
+                            "speak with plants|xphb"
+                        ],
+                        "7": [
+                            "stoneskin|xphb",
+                            "freedom of movement|xphb"
+                        ],
+                        "9": [
+                            "commune with nature|xphb",
+                            "tree stride|xphb"
+                        ]
+                    }
+                }
+            ]
         }
     ],
     "subclassFeature": [
@@ -3924,6 +3974,132 @@
             "entries": [
                 "At 14th level, you gain the ability to connect a creature's mind with the controlling nature of your patron. As an action, you can select a number of creatures up to your proficiency bonus within 60ft of you. Each target must make a Wisdom saving throw against your spell save DC. On a failed save, the creature is {@condition incapacitated} for a round, as they feel your patron attempt to control them like a marionette. On a successful save, the creature has {@variantrule disadvantage} on attack rolls against you until the start of your next turn.",
                 "This feature is usable once per {@variantrule long rest}."
+            ]
+        },
+        {
+            "name": "Wildspirit Patron",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Wildspirit",
+            "subclassSource": "Andreya",
+            "level": 3,
+            "entries": [
+                "You have forged a pact with an entity that commands powers over the land. Such entities are often well-revered by elves and druids, and have long been thought to reside in the positive plane of Bytopia, or perhaps the Beastlands. Such beings desire the preservation of natural beauty and the active maintenance of its many orderly and chaotic cycles. Entities powerful enough to forge a pact include gods such as Melora, Balinor, Helm and Sehenine, or their powerful underlings including a Solar, Planatar, Empyrean, Metalic Dragons and particularly powerful Treants.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Grassland's Teachings|Warlock|XPHB|Wildspirit|Andreya|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Wildspirit Spell List|Warlock|XPHB|Wildspirit|Andreya|3"
+                }
+            ]
+        },
+        {
+            "name": "Grassland's Teachings",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Wildspirit",
+            "subclassSource": "Andreya",
+            "level": 3,
+            "entries": [
+                "The voice of the Wildspirit has blessed you with understanding and guides you to a better tomorrow. You gain advantage on Intelligence saving throws, and a climb speed of 30ft.",
+                "In addition, you gain proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, or {@skill Survival}."
+            ]
+        },
+        {
+            "name": "Wildspirit Spell List",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Wildspirit",
+            "subclassSource": "Andreya",
+            "level": 3,
+            "entries": [
+                "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Wildspirit Spells table, you thereafter always have the listed spells prepared.",
+                {
+                    "type": "table",
+                    "name": "Wildspirit Spells",
+                    "colLabels": [
+                        "Warlock Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Entangle|XPHB}, {@spell Speak with Animals|XPHB}, {@spell Barkskin|XPHB}, {@spell Pass without Trace|XPHB}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Call Lightning|XPHB}, {@spell Speak with Plants|XPHB}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Stoneskin|XPHB}, {@spell Freedom of Movement|XPHB}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Commune with Nature|XPHB}, {@spell Tree Stride|XPHB}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mountains's Resolve",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Wildspirit",
+            "subclassSource": "Andreya",
+            "level": 6,
+            "entries": [
+                "You feel empowered by the land at your feet, the foundation of all things. You gain {@variantrule resistance|xphb} to piercing damage. "
+            ]
+        },
+        {
+            "name": "Arctic's Burden",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Wildspirit",
+            "subclassSource": "Andreya",
+            "level": 6,
+            "entries": [
+                "The terrain has emboldened you to bend the very fate of those you deem a scourge to the Wildspirit's desires. When a creature makes a saving throw within 60ft of you, you can use your reaction to expend a use of this feature and roll a {@dice d8}. The target subtracts the result of the roll from their total for the saving throw. This can be applied after they succeed on the saving throw, but must be applied before the outcome is determined.",
+                "This feature can be used twice per {@variantrule short rest|XPHB|short} or {variantrule long rest.} "
+            ]
+        },
+        {
+            "name": "Swamp's Nourishment",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Wildspirit",
+            "subclassSource": "Andreya",
+            "level": 10,
+            "entries": [
+                "You focus your charismatic nature into giving back to the land. If a charmed creature is a spellcaster with a spell slot as high as your pact slot, you can use a reaction to steal their magical essence. You regain a pact slot, and the target loses a spell slot of equal level.",
+                "You may use this feature once per {@variantrule short rest}.",
+                "Furthermore, creatures have {@variantrule disadvantage|XPHB} on saving throws against any of your spells that inflict the {@condition charmed} condition."
+            ]
+        },
+        {
+            "name": "Forest's Curse",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Wildspirit",
+            "subclassSource": "Andreya",
+            "level": 14,
+            "entries": [
+                "You can magically bestow a heinous curse upon your foes, drawing on the power of the natural cycle of life and death. As a bonus action, you may mark a creature you can see within 60ft of you. While marked, the targeted creature has {@variantrule disadvantage} on all attack rolls made against one creature you designate (you may choose yourself). In addition, they have {@variantrule disadvantage} on saving throws made with an ability of your choice. The mark fades after 1 minute, or if you become {@condition incapacitated}. Once used, you can't use this feature again until you finish a {@variantrule short rest|XPHB|short} or {@variantrule long rest} unless you expend a {@classFeature Pact Magic|Warlock|XPHB|1} spell slot to restore your use of it."
             ]
         }
     ],
