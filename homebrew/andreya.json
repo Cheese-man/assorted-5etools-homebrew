@@ -1671,6 +1671,55 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "Puppetmaster Patron",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "shortName": "Puppetmaster",
+            "subclassFeatures": [
+                "Puppetmaster Patron|Warlock|XPHB|Puppetmaster|Andreya|3",
+                "Broken Strings|Warlock|XPHB|Puppetmaster|Andreya|6",
+                "Puppet Sacrifice|Warlock|XPHB|Puppetmaster|Andreya|10",
+                "Eldritch Command|Warlock|XPHB|Puppetmaster|Andreya|14"
+            ],
+            "subclassSpells": [
+                "aid|xphb",
+                "animal friendship|xphb",
+                "command|xphb",
+                "gentle repose|xphb",
+                "clairvoyance|xphb",
+                "spirit guardians|xphb",
+                "confusion|xphb",
+                "freedom of movement|xphb",
+                "geas|xphb",
+                "rary's telepathic bond|xphb"
+            ],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            "aid|xphb",
+                            "animal friendship|xphb",
+                            "command|xphb",
+                            "gentle repose|xphb"
+                        ],
+                        "5": [
+                            "clairvoyance|xphb",
+                            "spirit guardians|xphb"
+                        ],
+                        "7": [
+                            "confusion|xphb",
+                            "freedom of movement|xphb"
+                        ],
+                        "9": [
+                            "geas|xphb",
+                            "rary's telepathic bond|xphb"
+                        ]
+                    }
+                }
+            ]
         }
     ],
     "subclassFeature": [
@@ -3117,8 +3166,7 @@
             "subclassSource": "Andreya",
             "level": 7,
             "entries": [
-                "TODO: Fix grammar",
-                "You and your allies can see invisible things that are within your {@classFeature Aura of Protection|Paladin||6}. Further, your enemies are unable to benefit from the {@condition invisible} condition while in your Aura of Protection. If an invisible enemy enters the aura, that condition has no effect on that ally while there."
+                "You and your allies can see invisible things that are within your {@classFeature Aura of Protection|Paladin||6}. Further, your enemies are unable to benefit from the {@condition invisible} condition while in your Aura of Protection."
             ]
         },
         {
@@ -3692,6 +3740,190 @@
             "entries": [
                 "You can cast {@spell Time Stop|XPHB}. You ignore this spell's restrictions, however no damage can be dealt while under the effects of this spell.",
                 "This can be used once per {@variantrule long rest|xphb}."
+            ]
+        },
+        {
+            "name": "Puppetmaster Patron",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Puppetmaster",
+            "subclassSource": "Andreya",
+            "level": 3,
+            "entries": [
+                "Your patron is a powerful entity whose nature is to be enchanting or manipulative. They may come from beyond the divine gate, the abyss, or they may be a being that has stripped away their humanity for power. Its motives are usually either trickery, fun, or manipulation, and grant similar powers of control to their best servants. The Puppetmaster chose you for a purpose and has granted you gifts, but for what end?",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Otherworldly Puppet|Warlock|XPHB|Puppetmaster|Andreya|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Puppetmaster Spell List|Warlock|XPHB|Puppetmaster|Andreya|3"
+                }
+            ]
+        },
+        {
+            "name": "Otherworldly Puppet",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Puppetmaster",
+            "subclassSource": "Andreya",
+            "level": 3,
+            "entries": [
+                "You can summon the energy of the Shadowfell and tether it to your being in the form of a puppet under your command. As an action, you can summon your otherworldly puppet in an unoccupied space of your choice that you can see within 30 feet of you.",
+                "The puppet is friendly to you and your companions and obeys your commands. See this creature's game statistics in the Otherworldly Puppet stat block, which uses your proficiency bonus (PB) in several places. The puppet has identical ability scores, skill proficiencies and saving throws to you. You determine the puppet's appearance. Some puppets take the form of a humanoid figure made of inky tendrils, while others look like beasts wreathed in shadow.",
+                {
+                    "type": "statblockInline",
+                    "dataType": "monster",
+                    "data": {
+                        "name": "Otherworldly Puppet",
+                        "source": "Andreya",
+                        "size": [
+                            "S"
+                        ],
+                        "type": "monstrosity",
+                        "alignment": [
+                            "U"
+                        ],
+                        "ac": [
+                            {
+                                "special": "10 + PB (natural armour)"
+                            }
+                        ],
+                        "hp": {
+                            "special": "5 + five times your warlock level"
+                        },
+                        "speed": {
+                            "walk": 30,
+                            "swim": 30,
+                            "fly": 30,
+                            "canHover": true
+                        },
+                        "summonedScaleByPlayerLevel": true,
+                        "summonedByClass": "Warlock|XPHB",
+                        "senses": [
+                            "darkvision 60 ft."
+                        ],
+                        "immune": [
+                            "psychic",
+                            "necrotic"
+                        ],
+                        "conditionImmune": [
+                            "charmed",
+                            "frightened",
+                            "grappled",
+                            "prone",
+                            "restrained"
+                        ],
+                        "languages": [
+                            "understands the languages you speak"
+                        ],
+                        "pbNote": "equals your bonus",
+                        "action": [
+                            {
+                                "name": "Spellcasting",
+                                "entries": [
+                                    "The puppet can cast any cantrip that you are capable of casting, with a casting time of one action."
+                                ]
+                            }
+                        ],
+                        "bonus": [
+                            {
+                                "name": "Shadow Swap",
+                                "entries": [
+                                    "If the puppet is within 30ft of you, it may use its bonus action to swap places with you. "
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "In combat, the puppet shares your initiative count and takes its turn immediately after yours. The only action it takes on its turn is the {@action Dodge} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition incapacitated}, the puppet can take any action of its choice, and is not limited to taking the Dodge action.",
+                "The puppet manifests for 1 hour, but disappears early if it is reduced to 0 hit points, you use this feature to summon the spirit again, you lose your concentration (as if you were concentrating on a spell), or you die.",
+                "This feature is usable once per {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}.",
+                "At 6th level, this feature no longer requires concentration."
+            ]
+        },
+        {
+            "name": "Puppetmaster Spell List",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Puppetmaster",
+            "subclassSource": "Andreya",
+            "level": 3,
+            "entries": [
+                "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Puppetmaster Spells table, you thereafter always have the listed spells prepared.",
+                {
+                    "type": "table",
+                    "name": "Puppetmaster Spells",
+                    "colLabels": [
+                        "Warlock Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell Aid|XPHB}, {@spell Animal Friendship|XPHB}, {@spell Command|XPHB}, {@spell Gentle Repose|XPHB}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Clairvoyance|XPHB}, {@spell Spirit Guardians|XPHB}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell Confusion|XPHB}, {@spell Freedom of Movement|XPHB}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell Geas|XPHB}, {@spell Rary's Telepathic Bond|XPHB}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Broken Strings",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Puppetmaster",
+            "subclassSource": "Andreya",
+            "level": 6,
+            "entries": [
+                "At 6th level, you learn to magically dwindle an enemy's resilience against your abilities. When you cause a creature to make a saving throw against a spell or ability of yours, you may impose {@variantrule disadvantage} on the saving throw.",
+                "Once you use this feature, you can't use it again until you finish a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}, or until an ally within 30ft of you becomes {@condition charmed} by a hostile creature.",
+                "Additionally, your {@subclassFeature Otherworldly Puppet|Warlock|XPHB|Puppetmaster|Andreya|3} feature no longer requires concentration."
+            ]
+        },
+        {
+            "name": "Puppet Sacrifice",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Puppetmaster",
+            "subclassSource": "Andreya",
+            "level": 10,
+            "entries": [
+                "At 10th level, you can use your reaction to command your puppet to dive in the way of an attack targeting you. Your puppet takes the damage from the attack in your place. You get to know the result of the attack roll before you choose to use your reaction in this way.",
+                "Your puppet must be summoned and within 30ft of you to be able to use your reaction in this way."
+            ]
+        },
+        {
+            "name": "Eldritch Command",
+            "source": "Andreya",
+            "className": "Warlock",
+            "classSource": "XPHB",
+            "subclassShortName": "Puppetmaster",
+            "subclassSource": "Andreya",
+            "level": 14,
+            "entries": [
+                "At 14th level, you gain the ability to connect a creature's mind with the controlling nature of your patron. As an action, you can select a number of creatures up to your proficiency bonus within 60ft of you. Each target must make a Wisdom saving throw against your spell save DC. On a failed save, the creature is {@condition incapacitated} for a round, as they feel your patron attempt to control them like a marionette. On a successful save, the creature has {@variantrule disadvantage} on attack rolls against you until the start of your next turn.",
+                "This feature is usable once per {@variantrule long rest}."
             ]
         }
     ],
