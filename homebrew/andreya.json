@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "1.10.0",
+                "version": "2.0.0",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1754659078532,
+        "dateLastModified": 1755142392912,
         "edition": "one",
         "spellSchools": {
             "DM": {
@@ -1895,7 +1895,7 @@
             "subclassSource": "Andreya",
             "level": 6,
             "entries": [
-                "You gain resistance to necrotic damage, and {@variantrule advantage|xphb} on saving throws caused by undead. Additionally, when you use your {@subclassFeature Grim Rejuvenation|Thaumaturge|Andreya|Soulkeeper|Andreya|3} feature, you can grant an ally within 30ft {@variantrule advantage} on their next d20 test."
+                "You gain resistance to necrotic damage, and {@variantrule advantage|xphb} on saving throws caused by undead. Additionally, when you use your {@subclassFeature Grim Rejuvenation|Thaumaturge|Andreya|Soulkeeper|Andreya|3} feature, you can grant an ally within 30ft {@variantrule advantage|XPHB} on their next d20 test."
             ]
         },
         {
@@ -2745,7 +2745,7 @@
                         ],
                         [
                             "9",
-                            "The target has {@variantrule disadvantage} on the saving throw required by the spell."
+                            "The target has {@variantrule disadvantage|XPHB} on the saving throw required by the spell."
                         ],
                         [
                             "10",
@@ -3945,7 +3945,7 @@
             "subclassSource": "Andreya",
             "level": 6,
             "entries": [
-                "At 6th level, you learn to magically dwindle an enemy's resilience against your abilities. When you cause a creature to make a saving throw against a spell or ability of yours, you may impose {@variantrule disadvantage} on the saving throw.",
+                "At 6th level, you learn to magically dwindle an enemy's resilience against your abilities. When you cause a creature to make a saving throw against a spell or ability of yours, you may impose {@variantrule disadvantage|XPHB} on the saving throw.",
                 "Once you use this feature, you can't use it again until you finish a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}, or until an ally within 30ft of you becomes {@condition charmed} by a hostile creature.",
                 "Additionally, your {@subclassFeature Otherworldly Puppet|Warlock|XPHB|Puppetmaster|Andreya|3} feature no longer requires concentration."
             ]
@@ -3972,7 +3972,7 @@
             "subclassSource": "Andreya",
             "level": 14,
             "entries": [
-                "At 14th level, you gain the ability to connect a creature's mind with the controlling nature of your patron. As an action, you can select a number of creatures up to your proficiency bonus within 60ft of you. Each target must make a Wisdom saving throw against your spell save DC. On a failed save, the creature is {@condition incapacitated} for a round, as they feel your patron attempt to control them like a marionette. On a successful save, the creature has {@variantrule disadvantage} on attack rolls against you until the start of your next turn.",
+                "At 14th level, you gain the ability to connect a creature's mind with the controlling nature of your patron. As an action, you can select a number of creatures up to your proficiency bonus within 60ft of you. Each target must make a Wisdom saving throw against your spell save DC. On a failed save, the creature is {@condition incapacitated} for a round, as they feel your patron attempt to control them like a marionette. On a successful save, the creature has {@variantrule disadvantage|XPHB} on attack rolls against you until the start of your next turn.",
                 "This feature is usable once per {@variantrule long rest}."
             ]
         },
@@ -4052,7 +4052,7 @@
             ]
         },
         {
-            "name": "Mountains's Resolve",
+            "name": "Mountain's Resolve",
             "source": "Andreya",
             "className": "Warlock",
             "classSource": "XPHB",
@@ -4073,7 +4073,7 @@
             "level": 6,
             "entries": [
                 "The terrain has emboldened you to bend the very fate of those you deem a scourge to the Wildspirit's desires. When a creature makes a saving throw within 60ft of you, you can use your reaction to expend a use of this feature and roll a {@dice d8}. The target subtracts the result of the roll from their total for the saving throw. This can be applied after they succeed on the saving throw, but must be applied before the outcome is determined.",
-                "This feature can be used twice per {@variantrule short rest|XPHB|short} or {variantrule long rest.} "
+                "This feature can be used twice per {@variantrule short rest|XPHB|short} or {@variantrule long rest}. "
             ]
         },
         {
@@ -4099,7 +4099,7 @@
             "subclassSource": "Andreya",
             "level": 14,
             "entries": [
-                "You can magically bestow a heinous curse upon your foes, drawing on the power of the natural cycle of life and death. As a bonus action, you may mark a creature you can see within 60ft of you. While marked, the targeted creature has {@variantrule disadvantage} on all attack rolls made against one creature you designate (you may choose yourself). In addition, they have {@variantrule disadvantage} on saving throws made with an ability of your choice. The mark fades after 1 minute, or if you become {@condition incapacitated}. Once used, you can't use this feature again until you finish a {@variantrule short rest|XPHB|short} or {@variantrule long rest} unless you expend a {@classFeature Pact Magic|Warlock|XPHB|1} spell slot to restore your use of it."
+                "You can magically bestow a heinous curse upon your foes, drawing on the power of the natural cycle of life and death. As a bonus action, you may mark a creature you can see within 60ft of you. While marked, the targeted creature has {@variantrule disadvantage|XPHB} on all attack rolls made against one creature you designate (you may choose yourself). In addition, they have {@variantrule disadvantage|XPHB} on saving throws made with an ability of your choice. The mark fades after 1 minute, or if you become {@condition incapacitated}. Once used, you can't use this feature again until you finish a {@variantrule short rest|XPHB|short} or {@variantrule long rest} unless you expend a {@classFeature Pact Magic|Warlock|XPHB|1} spell slot to restore your use of it."
             ]
         }
     ],
@@ -4238,7 +4238,7 @@
                 "ElemB"
             ],
             "entries": [
-                "The strength of the forge emboldens you. When crafting, you can expend this rune to give a number of creatures equal to your PB {@variantrule advantage} on any rolls made with {@filter tools|items|source=xphb|type=tool;artisan's tools} until the next short or long rest. This burst is usable once per {@variantrule long rest}."
+                "The strength of the forge emboldens you. When crafting, you can expend this rune to give a number of creatures equal to your PB {@variantrule advantage|XPHB} on any rolls made with {@filter tools|items|source=xphb|type=tool;artisan's tools} until the next short or long rest. This burst is usable once per {@variantrule long rest}."
             ]
         },
         {
