@@ -6,7 +6,7 @@
                 "full": "Godhome Campaign Setting",
                 "json": "Godhome",
                 "abbreviation": "Godhome",
-                "version": "1.0.1",
+                "version": "1.1.0",
                 "color": "25CAB1",
                 "authors": [
                     "lucid03"
@@ -17,7 +17,7 @@
             }
         ],
         "dateAdded": 1750509086458,
-        "dateLastModified": 1753596874769,
+        "dateLastModified": 1764473081072,
         "edition": "one"
     },
     "class": [
