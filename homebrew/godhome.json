@@ -973,7 +973,7 @@
                 "m": "A compass needle"
             },
             "entries": [
-                "A glowing compass appears in front of you, pointing to a location of your choice within the spell’s range. You must either know the general direction of the location or be familiar with the location. You may also specify a non-specific location such as a shop or inn, in which case the compass will point towards the nearest location that matches that description."
+                "A glowing compass appears in front of you, pointing to a location of your choice within the spell's range. You must either know the general direction of the location or be familiar with the location. You may also specify a non-specific location such as a shop or inn, in which case the compass will point towards the nearest location that matches that description."
             ],
             "entriesHigherLevel": [
                 "This spell's range increases to 1000 ft at 5th level, 2500 ft at 11th level and 1 mile at 17th level."
@@ -1147,7 +1147,8 @@
                 "ST"
             ],
             "miscTags": [
-                "ADV"
+                "ADV",
+                "SGT"
             ],
             "classes": {
                 "fromClassList": [
@@ -1222,7 +1223,8 @@
                 "ST"
             ],
             "miscTags": [
-                "TP"
+                "TP",
+                "SGT"
             ],
             "classes": {
                 "fromClassList": [
@@ -1297,7 +1299,8 @@
                 "ST"
             ],
             "miscTags": [
-                "SCT"
+                "SCT",
+                "SGT"
             ],
             "classes": {
                 "fromClassList": [
@@ -1377,6 +1380,266 @@
                     },
                     {
                         "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Spirit Ward",
+            "source": "Godhome",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "unit": "action",
+                    "number": 1
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "m": {
+                    "text": "A golden amulet worth 50 gp",
+                    "cost": 5000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "You ward a creature against those with opposing intentions. Select an alignment from Good, Neutral or Evil. If a creature of the chosen alignment would attack the warded creature, they must make a Wisdom saving throw, or else take {@damage 2d8} psychic damage and gain {@variantrule disadvantage|XPHB} on the attack roll."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell at 3rd level or higher, the damage increases by {@variantrule temporary hit points|XPHB} gained increases by {@scaledamage 2d8|3-9|1d8}"
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Arcane Redirection",
+            "source": "XPHB",
+            "level": 3,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when a creature you can see within 30 feet of you casts a single target spell"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 30,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Bending nearby magic, you twist the direction of a spell around you. Make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, you may select a new target for the spell. The new target may not be the caster of the spell, and you must choose a valid target for the spell."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Chaos Surge",
+            "source": "Godhome",
+            "level": 3,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "A small metal box"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Each creature within a 30 foot cube must make a Wisdom saving throw. On a failure, roll an effect on the Chaotic Shift table for that creature, and it takes {@damage 2d8} force damage. On a successful save, the creature takes half damage.",
+                {
+                    "type": "table",
+                    "name": "Chaotic Shift",
+                    "colLabels": [
+                        "{@dice d4}",
+                        "Effect"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 1
+                                }
+                            },
+                            "The creature subtracts a {@dice d6} from each ability check, attack roll and saving throw it makes before the end of its next turn."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 2
+                                }
+                            },
+                            "The creature becomes {@condition charmed|XPHB}, convinced that it is madly in love with you and will do anything to defend you until the end of its next turn."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 3
+                                }
+                            },
+                            "The creature teleports 60ft in a random direction chosen by the GM and is {@condition stunned|XPHB} until the beginning of its next turn."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 4
+                                }
+                            },
+                            "The creature gains {@variantrule vulnerability|XPHB} to bludgeoning, slashing and piercing damage until the beginning of its next turn"
+                        ]
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell at 4th level or higher, the damage increases by {@scaledamage 2d8|4-9|1d8} for each spell slot above 3rd."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "C",
+                "MT"
+            ],
+            "miscTags": [
+                "TP",
+                "RO",
+                "SCL"
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "conditionInflict": [
+                "charmed"
+            ],
+            "damageVulnerable": [
+                "slashing",
+                "bludgeoning",
+                "piercing"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
                         "source": "XPHB"
                     }
                 ]
