@@ -6,7 +6,7 @@
                 "full": "Godhome Campaign Setting",
                 "json": "Godhome",
                 "abbreviation": "Godhome",
-                "version": "1.1.0",
+                "version": "1.1.1",
                 "color": "25CAB1",
                 "authors": [
                     "lucid03"
@@ -17,7 +17,7 @@
             }
         ],
         "dateAdded": 1750509086458,
-        "dateLastModified": 1764473081072,
+        "dateLastModified": 1764473584228,
         "edition": "one"
     },
     "class": [
@@ -1208,13 +1208,7 @@
                 }
             ],
             "entries": [
-                "You target a creature you can see within range, forcing it to make a Constitution saving throw. On a failure, that creature swaps places with you. When the spell ends, you swap places with that creature once again.",
-                {
-                    "type": "homebrew",
-                    "entries": [
-                        "TODO: Can the creature be willing?"
-                    ]
-                }
+                "You target a creature you can see within range, forcing it to make a Constitution saving throw if unwilling. On a failure, that creature swaps places with you. When the spell ends, you swap places with that creature once again."
             ],
             "savingThrow": [
                 "constitution"
