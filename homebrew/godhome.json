@@ -468,7 +468,7 @@
                     "type": "entries",
                     "name": "Angelic Spirit",
                     "entries": [
-                        "Whenever you regain hit points, you regain an additional number equal to your proficiency bonus."
+                        "Whenever you regain {@variantrule hit points|xphb}, you regain an additional number equal to your proficiency bonus."
                     ]
                 },
                 {
@@ -733,7 +733,7 @@
                     "type": "entries",
                     "name": "Psychic Bite",
                     "entries": [
-                        "Transformed by the Astral Plane, you can lash out mentally as a creature. As a bonus action, you may force one creature you can see within 30 feet of you to make a Wisdom saving throw. On a failure, they take 3d6 psychic damage, and you gain a number of temporary hit points equal to half the damage dealt. The DC for this save equals 8 + your proficiency bonus + your Intelligence modifier. You may use this ability once per long rest."
+                        "Transformed by the Astral Plane, you can lash out mentally as a creature. As a bonus action, you may force one creature you can see within 30 feet of you to make a Wisdom saving throw. On a failure, they take 3d6 psychic damage, and you gain a number of {@variantrule temporary hit points|XPHB} equal to half the damage dealt. The DC for this save equals 8 + your proficiency bonus + your Intelligence modifier. You may use this ability once per long rest."
                     ]
                 },
                 {
@@ -1640,6 +1640,231 @@
                     },
                     {
                         "name": "Sorcerer",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Veil of Protection",
+            "source": "Godhome",
+            "level": 4,
+            "school": "A",
+            "time": [
+                {
+                    "unit": "reaction",
+                    "number": 1,
+                    "condition": "which you may take whenever a creature you can see within 60 feet uses a physical area of effect spell or ability"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "m": "A sphere of amber"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You conjure a mighty barrier around you to protect from an AOE ability such as a wizard's fireball or a dragon's breath weapon.",
+                "This barrier appears 5 ft above you and has a 10 ft radius, angled towards the source of your reaction. The barrier has 20 {@variantrule hit points|XPHB} and {@variantrule vulnerability|XPHB} to bludgeoning damage, and absorbs damage from the triggering source, protecting creatures under it. Once the barrier hits 0 hit points, it breaks, but reduces the damage taken by the amount the shield absorbed."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell at 5th level or higher, the shield gains 10 {@variantrule hit points|XPHB} for each spell slot above 4th."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Alter Destiny",
+            "source": "Godhome",
+            "level": 5,
+            "school": "T",
+            "time": [
+                {
+                    "unit": "hour",
+                    "number": 1
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "m": {
+                    "text": "Weaver’s tools, a sapphire worth 500 gp which the spell consumes",
+                    "consume": true,
+                    "cost": 50000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 24
+                    }
+                }
+            ],
+            "entries": [
+                "Tugging on threads of the Great Tapestry, you nudge a creature's fate in a certain direction. You can increase or decrease the {@variantrule Fate|Godhome} Score of a creature you touch for the spell's full casting time. The amount increased or decreased is equal to your spellcasting modifier. This spell cannot increase a creature's Fate Score to more than 17, or decrease it to less than 1. A creature can only benefit from this spell once per month."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Reality Rip",
+            "source": "Godhome",
+            "level": 9,
+            "school": "V",
+            "time": [
+                {
+                    "unit": "round",
+                    "number": 2
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "A broken clock"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A 30ft sphere of darkness appears within range at a point of your choosing. All creatures within the space must make a Constitution saving throw or take {@damage 12d12} necrotic damage, taking half damage on a success. If this damage reduces a creature to zero hit points, that creature is destroyed, any physical record of them including writing and drawings ceasing to exist, leaving the only trace of their existence as memories. A creature killed this way can only be revived by the {@spell Wish|XPHB} spell."
+            ],
+            "areaTags": [
+                "S",
+                "MT"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Invoke Legends",
+            "source": "Godhome",
+            "level": 9,
+            "school": "C",
+            "time": [
+                {
+                    "unit": "hour",
+                    "number": 1
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "m": {
+                    "text": "A depiction of a legend and a sapphire worth 10,000 gp which the spell consumes",
+                    "cost": 1000000,
+                    "consume": true
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 24,
+                        "type": "hour"
+                    }
+                }
+            ],
+            "entries": [
+                "You focus your mind on an ancient legend long lost. The legend can be a place, object, or creature. The legend is summoned to your location within 30ft of you. If you focus on a place, up to 1 mile of the chosen place will appear around you. The chosen legend remains material for the duration of the spell and has all of the properties stated within the legend, however its total power cannot be stronger than any effect created by the {@spell Wish|XPHB} spell. The legend's attitude towards you is not dictated by this spell."
+            ],
+            "miscTags": [
+                "SMN"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
                         "source": "XPHB"
                     }
                 ]
