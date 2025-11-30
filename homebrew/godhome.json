@@ -20,6 +20,13 @@
         "dateLastModified": 1753596874769,
         "edition": "one"
     },
+    "class": [
+        {
+            "name": "Puppeteer",
+            "source": "Godhome",
+            "classFeatures": []
+        }
+    ],
     "race": [
         {
             "name": "Eiclune",
@@ -366,7 +373,7 @@
             "source": "Godhome",
             "fluff": {
                 "entries": [
-                    "The denizens of the Archives and the great writers of fate, Luminar are responsible for the maintenance of the Great Tapestry. An alien looking race with pale, glowing skin, four arms and one large eye in the centre of their forehead, Luminar are truly separated from the continent of Deius. Hairless and with brittle bones, it is considered taboo for a Lumiar to leave the Archives unless a creature whose fate they write has disrupted the Great Tapestry."
+                    "The denizens of the Archives and the great writers of fate, Luminar are responsible for the maintenance of the Great Tapestry. An alien looking race with pale, glowing skin, four arms and one large eye in the centre of their forehead, Luminar are truly separated from the continent of Deius. Hairless and with brittle bones, it is considered taboo for a Luminar to leave the Archives unless a creature whose fate they write has disrupted the Great Tapestry."
                 ]
             },
             "edition": "one",
@@ -461,7 +468,7 @@
                     "type": "entries",
                     "name": "Angelic Spirit",
                     "entries": [
-                        "Whenever you regain hit points, you regain an additional number equal to your proficiency bonus."
+                        "Whenever you regain {@variantrule hit points|xphb}, you regain an additional number equal to your proficiency bonus."
                     ]
                 },
                 {
@@ -726,7 +733,7 @@
                     "type": "entries",
                     "name": "Psychic Bite",
                     "entries": [
-                        "Transformed by the Astral Plane, you can lash out mentally as a creature. As a bonus action, you may force one creature you can see within 30 feet of you to make a Wisdom saving throw. On a failure, they take 3d6 psychic damage, and you gain a number of temporary hit points equal to half the damage dealt. The DC for this save equals 8 + your proficiency bonus + your Intelligence modifier. You may use this ability once per long rest."
+                        "Transformed by the Astral Plane, you can lash out mentally as a creature. As a bonus action, you may force one creature you can see within 30 feet of you to make a Wisdom saving throw. On a failure, they take 3d6 psychic damage, and you gain a number of {@variantrule temporary hit points|XPHB} equal to half the damage dealt. The DC for this save equals 8 + your proficiency bonus + your Intelligence modifier. You may use this ability once per long rest."
                     ]
                 },
                 {
@@ -935,6 +942,933 @@
                 "Not only does your Fate score change how certain monsters and items interact with you, but it also empowers you. For each 4 points of Fate you have, you may increase any ability score by +1, for a maximum of 24 . However, a number of times equal to the bonuses granted by your Fate score per month, the DM may declare a new result for any dice roll you make. This result cannot be changed in any way.",
                 "Your Fate score can be changed by Gods, spells, magical items, the Archives, and by interacting with others with high Fate scores or grand destinies themselves."
             ]
+        }
+    ],
+    "spell": [
+        {
+            "name": "Magic Compass",
+            "source": "Godhome",
+            "school": "D",
+            "level": 0,
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 500
+                }
+            },
+            "components": {
+                "v": true,
+                "m": "A compass needle"
+            },
+            "entries": [
+                "A glowing compass appears in front of you, pointing to a location of your choice within the spell's range. You must either know the general direction of the location or be familiar with the location. You may also specify a non-specific location such as a shop or inn, in which case the compass will point towards the nearest location that matches that description."
+            ],
+            "entriesHigherLevel": [
+                "This spell's range increases to 1000 ft at 5th level, 2500 ft at 11th level and 1 mile at 17th level."
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Puppeteer",
+                        "source": "Godhome"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Spiritual Discernment",
+            "source": "Godhome",
+            "school": "D",
+            "level": 0,
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entries": [
+                "You touch one creature for a minute in order to sense its alignment. If that creature is unwilling or unaware of this spell being cast on it, it must make a Wisdom saving throw. On a success, you do not learn of its alignment."
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Puppeteer",
+                        "source": "Godhome"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Transmute Alcohol",
+            "level": 0,
+            "source": "Godhome",
+            "school": "T",
+            "time": [
+                {
+                    "unit": "minute",
+                    "number": 1
+                }
+            ],
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "entries": [
+                "You transform 5 ounces of clean water into an alcoholic substance of your choice."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "source": "TCE",
+                        "name": "Artificer"
+                    },
+                    {
+                        "source": "XPHB",
+                        "name": "Bard"
+                    },
+                    {
+                        "source": "XPHB",
+                        "name": "Cleric"
+                    },
+                    {
+                        "source": "XPHB",
+                        "name": "Sorcerer"
+                    },
+                    {
+                        "source": "XPHB",
+                        "name": "Wizard"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Balance",
+            "level": 1,
+            "school": "A",
+            "source": "Godhome",
+            "time": [
+                {
+                    "unit": "reaction",
+                    "number": 1,
+                    "condition": "which you take when a creature within range would make an attack roll or saving throw"
+                }
+            ],
+            "range": {
+                "distance": {
+                    "amount": 60,
+                    "type": "feet"
+                },
+                "type": "point"
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You revert the natural order of the world for one creature. Choose a creature you can see within 60 feet of you that would make an attack roll or a saving throw with either {@variantrule advantage|XPHB} or {@variantrule disadvantage|XPHB}. You may instead choose to negate that advantage/disadvantage, forcing the creature to make a straight roll."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "ADV",
+                "SGT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Puppeteer",
+                        "source": "Godhome"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Mayhem Twist",
+            "source": "Godhome",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "unit": "action",
+                    "number": 1
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 15,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "amount": 1,
+                        "type": "minute"
+                    }
+                }
+            ],
+            "entries": [
+                "You target a creature you can see within range, forcing it to make a Constitution saving throw. On a failure, that creature swaps places with you. When the spell ends, you swap places with that creature once again.",
+                {
+                    "type": "homebrew",
+                    "entries": [
+                        "TODO: Can the creature be willing?"
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "TP",
+                "SGT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Manipulate",
+            "source": "Godhome",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "unit": "action",
+                    "number": 1
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 30,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "A bone"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "amount": 1,
+                        "type": "minute"
+                    }
+                }
+            ],
+            "entries": [
+                "You pry open a creature's mental defenses. Select one creature you can see within range. That creature must make a Wisdom saving throw, made at {@variantrule advantage|XPHB} if you or your allies are fighting it. On a failure, that creature's mind becomes weakened against you, granting you {@variantrule advantage|XPHB} on attack rolls made against it for the duration of the spell."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell at 2nd level or higher, you may choose an additional target for each spell slot above 1st."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCT",
+                "SGT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Puppeteer",
+                        "source": "Godhome"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Return to Death",
+            "source": "Godhome",
+            "level": 1,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 60,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You bring a creature closer to the plane of Rayse, realm of the dead. You may make a spell attack roll against one creature you can see within range. On a hit, that creature takes {@damage 3d6} force damage. If the creature is undead, this spell deals maximum damage instead."
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "affectsCreatureType": [
+                "undead"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Puppeteer",
+                        "source": "Godhome"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Spirit Ward",
+            "source": "Godhome",
+            "level": 2,
+            "school": "A",
+            "time": [
+                {
+                    "unit": "action",
+                    "number": 1
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "m": {
+                    "text": "A golden amulet worth 50 gp",
+                    "cost": 5000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "You ward a creature against those with opposing intentions. Select an alignment from Good, Neutral or Evil. If a creature of the chosen alignment would attack the warded creature, they must make a Wisdom saving throw, or else take {@damage 2d8} psychic damage and gain {@variantrule disadvantage|XPHB} on the attack roll."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell at 3rd level or higher, the damage increases by {@variantrule temporary hit points|XPHB} gained increases by {@scaledamage 2d8|3-9|1d8}"
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "miscTags": [
+                "SCL"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Arcane Redirection",
+            "source": "XPHB",
+            "level": 3,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when a creature you can see within 30 feet of you casts a single target spell"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 30,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Bending nearby magic, you twist the direction of a spell around you. Make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, you may select a new target for the spell. The new target may not be the caster of the spell, and you must choose a valid target for the spell."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Chaos Surge",
+            "source": "Godhome",
+            "level": 3,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "A small metal box"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Each creature within a 30 foot cube must make a Wisdom saving throw. On a failure, roll an effect on the Chaotic Shift table for that creature, and it takes {@damage 2d8} force damage. On a successful save, the creature takes half damage.",
+                {
+                    "type": "table",
+                    "name": "Chaotic Shift",
+                    "colLabels": [
+                        "{@dice d4}",
+                        "Effect"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 1
+                                }
+                            },
+                            "The creature subtracts a {@dice d6} from each ability check, attack roll and saving throw it makes before the end of its next turn."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 2
+                                }
+                            },
+                            "The creature becomes {@condition charmed|XPHB}, convinced that it is madly in love with you and will do anything to defend you until the end of its next turn."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 3
+                                }
+                            },
+                            "The creature teleports 60ft in a random direction chosen by the GM and is {@condition stunned|XPHB} until the beginning of its next turn."
+                        ],
+                        [
+                            {
+                                "type": "cell",
+                                "roll": {
+                                    "exact": 4
+                                }
+                            },
+                            "The creature gains {@variantrule vulnerability|XPHB} to bludgeoning, slashing and piercing damage until the beginning of its next turn"
+                        ]
+                    ]
+                }
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell at 4th level or higher, the damage increases by {@scaledamage 2d8|4-9|1d8} for each spell slot above 3rd."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "C",
+                "MT"
+            ],
+            "miscTags": [
+                "TP",
+                "RO",
+                "SCL"
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "conditionInflict": [
+                "charmed"
+            ],
+            "damageVulnerable": [
+                "slashing",
+                "bludgeoning",
+                "piercing"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Veil of Protection",
+            "source": "Godhome",
+            "level": 4,
+            "school": "A",
+            "time": [
+                {
+                    "unit": "reaction",
+                    "number": 1,
+                    "condition": "which you may take whenever a creature you can see within 60 feet uses a physical area of effect spell or ability"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "m": "A sphere of amber"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You conjure a mighty barrier around you to protect from an AOE ability such as a wizard's fireball or a dragon's breath weapon.",
+                "This barrier appears 5 ft above you and has a 10 ft radius, angled towards the source of your reaction. The barrier has 20 {@variantrule hit points|XPHB} and {@variantrule vulnerability|XPHB} to bludgeoning damage, and absorbs damage from the triggering source, protecting creatures under it. Once the barrier hits 0 hit points, it breaks, but reduces the damage taken by the amount the shield absorbed."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell at 5th level or higher, the shield gains 10 {@variantrule hit points|XPHB} for each spell slot above 4th."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Alter Destiny",
+            "source": "Godhome",
+            "level": 5,
+            "school": "T",
+            "time": [
+                {
+                    "unit": "hour",
+                    "number": 1
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "m": {
+                    "text": "Weaver’s tools, a sapphire worth 500 gp which the spell consumes",
+                    "consume": true,
+                    "cost": 50000
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 24
+                    }
+                }
+            ],
+            "entries": [
+                "Tugging on threads of the Great Tapestry, you nudge a creature's fate in a certain direction. You can increase or decrease the {@variantrule Fate|Godhome} Score of a creature you touch for the spell's full casting time. The amount increased or decreased is equal to your spellcasting modifier. This spell cannot increase a creature's Fate Score to more than 17, or decrease it to less than 1. A creature can only benefit from this spell once per month."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Reality Rip",
+            "source": "Godhome",
+            "level": 9,
+            "school": "V",
+            "time": [
+                {
+                    "unit": "round",
+                    "number": 2
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "A broken clock"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "A 30ft sphere of darkness appears within range at a point of your choosing. All creatures within the space must make a Constitution saving throw or take {@damage 12d12} necrotic damage, taking half damage on a success. If this damage reduces a creature to zero hit points, that creature is destroyed, any physical record of them including writing and drawings ceasing to exist, leaving the only trace of their existence as memories. A creature killed this way can only be revived by the {@spell Wish|XPHB} spell."
+            ],
+            "areaTags": [
+                "S",
+                "MT"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "damageInflict": [
+                "necrotic"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Invoke Legends",
+            "source": "Godhome",
+            "level": 9,
+            "school": "C",
+            "time": [
+                {
+                    "unit": "hour",
+                    "number": 1
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "m": {
+                    "text": "A depiction of a legend and a sapphire worth 10,000 gp which the spell consumes",
+                    "cost": 1000000,
+                    "consume": true
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 24,
+                        "type": "hour"
+                    }
+                }
+            ],
+            "entries": [
+                "You focus your mind on an ancient legend long lost. The legend can be a place, object, or creature. The legend is summoned to your location within 30ft of you. If you focus on a place, up to 1 mile of the chosen place will appear around you. The chosen legend remains material for the duration of the spell and has all of the properties stated within the legend, however its total power cannot be stronger than any effect created by the {@spell Wish|XPHB} spell. The legend's attitude towards you is not dictated by this spell."
+            ],
+            "miscTags": [
+                "SMN"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    }
+                ]
+            }
         }
     ]
 }
