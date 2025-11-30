@@ -20,6 +20,13 @@
         "dateLastModified": 1753596874769,
         "edition": "one"
     },
+    "class": [
+        {
+            "name": "Puppeteer",
+            "source": "Godhome",
+            "classFeatures": []
+        }
+    ],
     "race": [
         {
             "name": "Eiclune",
@@ -991,6 +998,10 @@
                     {
                         "name": "Wizard",
                         "source": "XPHB"
+                    },
+                    {
+                        "name": "Puppeteer",
+                        "source": "Godhome"
                     }
                 ]
             }
@@ -1040,6 +1051,10 @@
                     {
                         "name": "Paladin",
                         "source": "XPHB"
+                    },
+                    {
+                        "name": "Puppeteer",
+                        "source": "Godhome"
                     }
                 ]
             }
@@ -1047,7 +1062,7 @@
         {
             "name": "Transmute Alcohol",
             "level": 0,
-            "source": "Andreya",
+            "source": "Godhome",
             "school": "T",
             "time": [
                 {
@@ -1093,6 +1108,276 @@
                     {
                         "source": "XPHB",
                         "name": "Wizard"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Balance",
+            "level": 1,
+            "school": "A",
+            "source": "Godhome",
+            "time": [
+                {
+                    "unit": "reaction",
+                    "number": 1,
+                    "condition": "which you take when a creature within range would make an attack roll or saving throw"
+                }
+            ],
+            "range": {
+                "distance": {
+                    "amount": 60,
+                    "type": "feet"
+                },
+                "type": "point"
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You revert the natural order of the world for one creature. Choose a creature you can see within 60 feet of you that would make an attack roll or a saving throw with either {@variantrule advantage|XPHB} or {@variantrule disadvantage|XPHB}. You may instead choose to negate that advantage/disadvantage, forcing the creature to make a straight roll."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "ADV"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Puppeteer",
+                        "source": "Godhome"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Mayhem Twist",
+            "source": "Godhome",
+            "level": 1,
+            "school": "V",
+            "time": [
+                {
+                    "unit": "action",
+                    "number": 1
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 15,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "amount": 1,
+                        "type": "minute"
+                    }
+                }
+            ],
+            "entries": [
+                "You target a creature you can see within range, forcing it to make a Constitution saving throw. On a failure, that creature swaps places with you. When the spell ends, you swap places with that creature once again.",
+                {
+                    "type": "homebrew",
+                    "entries": [
+                        "TODO: Can the creature be willing?"
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "TP"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Manipulate",
+            "source": "Godhome",
+            "level": 1,
+            "school": "E",
+            "time": [
+                {
+                    "unit": "action",
+                    "number": 1
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 30,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "A bone"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "amount": 1,
+                        "type": "minute"
+                    }
+                }
+            ],
+            "entries": [
+                "You pry open a creature's mental defenses. Select one creature you can see within range. That creature must make a Wisdom saving throw, made at {@variantrule advantage|XPHB} if you or your allies are fighting it. On a failure, that creature's mind becomes weakened against you, granting you {@variantrule advantage|XPHB} on attack rolls made against it for the duration of the spell."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell at 2nd level or higher, you may choose an additional target for each spell slot above 1st."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "miscTags": [
+                "SCT"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Puppeteer",
+                        "source": "Godhome"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Return to Death",
+            "source": "Godhome",
+            "level": 1,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "amount": 60,
+                    "type": "feet"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You bring a creature closer to the plane of Rayse, realm of the dead. You may make a spell attack roll against one creature you can see within range. On a hit, that creature takes {@damage 3d6} force damage. If the creature is undead, this spell deals maximum damage instead."
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "affectsCreatureType": [
+                "undead"
+            ],
+            "areaTags": [
+                "S"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Puppeteer",
+                        "source": "Godhome"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "XPHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "XPHB"
                     }
                 ]
             }
