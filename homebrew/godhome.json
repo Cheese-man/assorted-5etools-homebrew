@@ -6,7 +6,7 @@
                 "full": "Godhome Campaign Setting",
                 "json": "Godhome",
                 "abbreviation": "Godhome",
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "color": "25CAB1",
                 "authors": [
                     "lucid03"
@@ -17,7 +17,7 @@
             }
         ],
         "dateAdded": 1750509086458,
-        "dateLastModified": 1764473584228,
+        "dateLastModified": 1767335110918,
         "edition": "one"
     },
     "class": [
@@ -1468,7 +1468,7 @@
         },
         {
             "name": "Arcane Redirection",
-            "source": "XPHB",
+            "source": "Godhome",
             "level": 3,
             "school": "A",
             "time": [

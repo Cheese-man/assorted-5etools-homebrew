@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "2.0.0",
+                "version": "2.1.0",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1755142392912,
+        "dateLastModified": 1767335110918,
         "edition": "one",
         "spellSchools": {
             "DM": {
@@ -2473,7 +2473,7 @@
                     ]
                 },
                 "Once you complete any of these options, you return to your own body. You can use this feature once per {@variantrule short rest|xphb}, but cannot use it on the same target more than once per {@variantrule long rest|XPHB}",
-                "Furthermore, in addition to swapping one of your spells on a {@variantrule long rest}, you may switch out a second spell, but the spell you swap with must be an illusion spell on your spell list."
+                "Furthermore, in addition to swapping one of your spells on a {@variantrule long rest|XPHB}, you may switch out a second spell, but the spell you swap with must be an illusion spell on your spell list."
             ]
         },
         {
@@ -2787,7 +2787,7 @@
                         ],
                         [
                             "7",
-                            "All of your hair changes to the colour of your eyes until your next {@variantrule long rest}."
+                            "All of your hair changes to the colour of your eyes until your next {@variantrule long rest|XPHB}."
                         ],
                         [
                             "8",
@@ -3657,7 +3657,7 @@
             "classSource": "XPHB",
             "level": 18,
             "entries": [
-                "Starting at 18th level, your elemental prowess has allowed you to stave off damage to a more significant degree. You gain immunity to lightning damage, and once per short or long rest you can take no damage when using your {@subclassFeature Lightning Rod|Fighter|XPHB|Lightning Skirmisher|Andreya|3} feature.",
+                "Starting at 18th level, your elemental prowess has allowed you to stave off damage to a more significant degree. You gain {@variantrule immunity|XPHB} to lightning damage, and once per short or long rest you can take no damage when using your {@subclassFeature Lightning Rod|Fighter|XPHB|Lightning Skirmisher|Andreya|3} feature.",
                 "Additionally, the damage dealt by using a {@subclassFeature Galvanic Burst|Fighter|XPHB|Lightning Skirmisher|Andreya|3||galvanic charges} increases to {@damage 3d10}, and the amount of damage you can reduce from using your {@subclassFeature Lightning Rod|Fighter|XPHB|Lightning Skirmisher|Andreya|3} feature increases to {@damage 3d10}."
             ]
         },
@@ -3973,7 +3973,7 @@
             "level": 14,
             "entries": [
                 "At 14th level, you gain the ability to connect a creature's mind with the controlling nature of your patron. As an action, you can select a number of creatures up to your proficiency bonus within 60ft of you. Each target must make a Wisdom saving throw against your spell save DC. On a failed save, the creature is {@condition incapacitated} for a round, as they feel your patron attempt to control them like a marionette. On a successful save, the creature has {@variantrule disadvantage|XPHB} on attack rolls against you until the start of your next turn.",
-                "This feature is usable once per {@variantrule long rest}."
+                "This feature is usable once per {@variantrule long rest|XPHB}."
             ]
         },
         {
@@ -4073,7 +4073,7 @@
             "level": 6,
             "entries": [
                 "The terrain has emboldened you to bend the very fate of those you deem a scourge to the Wildspirit's desires. When a creature makes a saving throw within 60ft of you, you can use your reaction to expend a use of this feature and roll a {@dice d8}. The target subtracts the result of the roll from their total for the saving throw. This can be applied after they succeed on the saving throw, but must be applied before the outcome is determined.",
-                "This feature can be used twice per {@variantrule short rest|XPHB|short} or {@variantrule long rest}. "
+                "This feature can be used twice per {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB}. "
             ]
         },
         {
@@ -4099,7 +4099,7 @@
             "subclassSource": "Andreya",
             "level": 14,
             "entries": [
-                "You can magically bestow a heinous curse upon your foes, drawing on the power of the natural cycle of life and death. As a bonus action, you may mark a creature you can see within 60ft of you. While marked, the targeted creature has {@variantrule disadvantage|XPHB} on all attack rolls made against one creature you designate (you may choose yourself). In addition, they have {@variantrule disadvantage|XPHB} on saving throws made with an ability of your choice. The mark fades after 1 minute, or if you become {@condition incapacitated}. Once used, you can't use this feature again until you finish a {@variantrule short rest|XPHB|short} or {@variantrule long rest} unless you expend a {@classFeature Pact Magic|Warlock|XPHB|1} spell slot to restore your use of it."
+                "You can magically bestow a heinous curse upon your foes, drawing on the power of the natural cycle of life and death. As a bonus action, you may mark a creature you can see within 60ft of you. While marked, the targeted creature has {@variantrule disadvantage|XPHB} on all attack rolls made against one creature you designate (you may choose yourself). In addition, they have {@variantrule disadvantage|XPHB} on saving throws made with an ability of your choice. The mark fades after 1 minute, or if you become {@condition incapacitated}. Once used, you can't use this feature again until you finish a {@variantrule short rest|XPHB|short} or {@variantrule long rest|XPHB} unless you expend a {@classFeature Pact Magic|Warlock|XPHB|1} spell slot to restore your use of it."
             ]
         }
     ],
@@ -4167,6 +4167,16 @@
             ]
         },
         {
+            "name": "Air Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "As a reaction when an ally within 30ft is hit by a melee attack, you can conjure a strong wind pushing the creature 30ft towards you in a straight line. They make a DC 15 Constitution save or suffer a number of d8 equal to your proficiency bonus of magical bludgeoning damage. They take half as much damage as a success. If the creature is more than 1 size category above you, they do not move but still take the damage. This burst is usable once per {@variantrule long rest|xphb}."
+            ]
+        },
+        {
             "name": "Water Minor",
             "source": "Andreya",
             "featureType": [
@@ -4183,7 +4193,7 @@
                 "ElemB"
             ],
             "entries": [
-                "When you cast a spell that reduces a creature to zero hit points, you absorb some of their magical essence, strengthening you. You can immediately use {@classFeature arcane recovery|Wizard||1}. This does not count towards normal uses of arcane recovery. This burst is usable once per {@variantrule long rest}."
+                "When you cast a spell that reduces a creature to zero hit points, you absorb some of their magical essence, strengthening you. You can immediately use {@classFeature arcane recovery|Wizard||1}. This does not count towards normal uses of arcane recovery. This burst is usable once per {@variantrule long rest|XPHB}."
             ]
         },
         {
@@ -4193,7 +4203,7 @@
                 "ElemB"
             ],
             "entries": [
-                "When you cast a healing or buffing spell on a creature you may invoke the fires of passionate love to burn away any semblance of negativity. When invoked you can use a reaction to end a spell effect of 3rd level or lower, or the {@condition blinded}, {@condition deafened}, {@condition poisoned}, {@condition frightened} or {@condition stunned} conditions. This applies to one creature, including yourself. This burst is usable once per {@variantrule long rest}."
+                "When you cast a healing or buffing spell on a creature you may invoke the fires of passionate love to burn away any semblance of negativity. When invoked you can use a reaction to end a spell effect of 3rd level or lower, or the {@condition blinded}, {@condition deafened}, {@condition poisoned}, {@condition frightened} or {@condition stunned} conditions. This applies to one creature, including yourself. This burst is usable once per {@variantrule long rest|XPHB}."
             ]
         },
         {
@@ -4203,7 +4213,122 @@
                 "ElemB"
             ],
             "entries": [
-                "When eating food or drinking alcohol, you may invoke the power of gluttony. All hit dice rolled for a {@variantrule short rest} are doubled, and you regain a spell slot equal to half your PB or lower, rounding down. This burst is usable once per {@variantrule long rest}."
+                "When eating food or drinking alcohol, you may invoke the power of gluttony. All hit dice rolled for a {@variantrule short rest} are doubled, and you regain a spell slot equal to half your PB or lower, rounding down. This burst is usable once per {@variantrule long rest|XPHB}."
+            ]
+        },
+        {
+            "name": "Cloud Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When you cast a spell that debuffs or damages a creature, you can double the range of the spell. When doing this, the creature must make a DC15 Strength saving throw, or fall {@conditoon prone} and take PB × {@damage d6} thunder damage. They take half as much on a success. This burst is usable once per {@variantrule long rest|XPHB}."
+            ]
+        },
+        {
+            "name": "Blaze Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "The strength of the forge emboldens you. When crafting, you can expend this rune to give a number of creatures equal to your PB {@variantrule advantage|XPHB} on any rolls made with {@filter tools|items|source=xphb|type=tool;artisan's tools} until the next short or long rest. This burst is usable once per {@variantrule long rest|XPHB}."
+            ]
+        },
+        {
+            "name": "Death Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When ending the life of a creature, you may invoke the power of the Shadowfell to gain {@variantrule temporary hit points|xphb} equal to their Constitution score. This burst is usable once per {@variantrule long rest|XPHB}."
+            ]
+        },
+        {
+            "name": "Ice Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When making an attack roll, you can use a reaction to invoke the quiet chill of unknown entities. The target must make a DC 15 Constitution saving throw. On a failed save, the target is frozen, suffering the {@condition paralyzed} condition. They may remake the save at the end of each of their turns, ending the condition on a success, or after 1 minute. This burst is usable once per {@variantrule long rest|XPHB}."
+            ]
+        },
+        {
+            "name": "Frost Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When dealing damage with a spell, you may change the damage type to cold. When doing this you can grant {@variantrule immunity|XPHB} to cold damage to one creature you can see until the end of your next turn. This burst is usable once per {@variantrule long rest|XPHB}."
+            ]
+        },
+        {
+            "name": "Earth Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When you hit a creature with a weapon or spell attack, you may use a reaction to invoke the rune of earth, conjuring a series of earthen hands to grasp the target. The attack deals an additional die of damage. In addition, the target must make a DC15 Strength saving throw or be {@condition restrained} for 1 minute. The target must take an action to break free and end the condition early. This burst is usable once per {@variantrule long rest|XPHB}."
+            ]
+        },
+        {
+            "name": "Stone Minor",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "entries": [
+                "When receiving damage, you may invoke the power of the runeshapers. You are resistant to all damage until the start of your next turn. This burst is usable once per {@variantrule long rest|XPHB}."
+            ]
+        },
+        {
+            "name": "Air Major: Akadi's Assault",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Must use the {@optfeature Air Minor|Andreya} burst 5 times, and visit a place of significance to the element of air."
+                }
+            ],
+            "entries": [
+                "As a reaction, when an ally within sight is hit by a melee attack, you can conjure a strong wind pulling the creature and an additional number of creatures up to your Constitution modifier up to 120ft towards you in a straight line. Each creature must make a DC 18 Constitution save, or suffer a number of d8 equal to your proficiency bonus of magical bludgeoning damage, or half as much on a successful save. If the creature is more than 1 size category above you, they do not move but still take the damage. In addition, ranged attacks made against the creature that triggered your reaction are made at {@variantrule advantage|xphb} for the next minute. This burst is usable once per {@variantrule long rest|xphb}."
+            ]
+        },
+        {
+            "name": "Fire Major: Kossuth's Catastrophe",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Must use the {@optfeature Fire Minor|Andreya} burst 5 times, and visit a place of significance to the element of fire."
+                }
+            ],
+            "entries": [
+                "When you cast a healing or buffing spell on a creature you may use a reaction to invoke this burst. When invoked, you can end a spell effect of 7th level or lower, or the {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition poisoned}, {@condition frightened} or {@condition stunned} conditions. This applies to a number of creatures equal to 1 plus to your Constitution modifier, including yourself. This may also be used as a reaction when one of these effects hampers you, removing it from yourself. This burst is usable once per {@variantrule long rest|xphb}."
+            ]
+        },
+        {
+            "name": "Earth Major: Grumbar's Gumption",
+            "source": "Andreya",
+            "featureType": [
+                "ElemB"
+            ],
+            "prerequisite": [
+                {
+                    "other": "Must use the {@optfeature Earth Minor|Andreya} burst 5 times, and visit a place of significance to the element of earth."
+                }
+            ],
+            "entries": [
+                "When you hit a creature with a weapon or spell attack, you may use a reaction to invoke this burst, conjuring a series of earthen hands to grasp the target. The attack deals an additional 3 dice of damage and your critical hit threshold changes to 15-20 for 3 rounds. You may make one additional attack after activating this burst. In addition, the target must make a strength save (dc18) or be {@condition restrained} for 1 minute. The target may use an action to break free to end the condition early. This burst is usable once per {@variantrule long rest|xphb}."
             ]
         },
         {
@@ -4214,61 +4339,11 @@
             ],
             "prerequisite": [
                 {
-                    "other": "Must use the {@optfeature Water Minor|Andreya} burst 5 times, and visit a place of significance."
+                    "other": "Must use the {@optfeature Water Minor|Andreya} burst 5 times, and visit a place of significance to the element of water."
                 }
             ],
             "entries": [
                 "The sea churns with an unmistakable strength. When you cast a concentration spell or activate a limited use ability you can use your reaction to invoke the force of the tides support those around you. The members of your party gain +1 to attack rolls, armour class and a 10ft increase to their movement speed. These buffs last 5 rounds. At 5th level, this increases to +2 & 20ft, and at 13th +3 & 30ft. Each person in your party is under the effect of {@spell Freedom of Movement|XPHB} and the party shares a communal use of {@spell Death Ward|XPHB}. This burst is usable once per {@variantrule long rest|xphb}."
-            ]
-        },
-        {
-            "name": "Cloud Minor",
-            "source": "Andreya",
-            "featureType": [
-                "ElemB"
-            ],
-            "entries": [
-                "When you cast a spell that debuffs or damages a creature, you can double the range of the spell. When doing this, the creature must make a DC15 Strength saving throw, or fall {@conditoon prone} and take PB × {@damage d6} thunder damage. They take half as much on a success. This burst is usable once per {@variantrule long rest}."
-            ]
-        },
-        {
-            "name": "Blaze Minor",
-            "source": "Andreya",
-            "featureType": [
-                "ElemB"
-            ],
-            "entries": [
-                "The strength of the forge emboldens you. When crafting, you can expend this rune to give a number of creatures equal to your PB {@variantrule advantage|XPHB} on any rolls made with {@filter tools|items|source=xphb|type=tool;artisan's tools} until the next short or long rest. This burst is usable once per {@variantrule long rest}."
-            ]
-        },
-        {
-            "name": "Ice Minor",
-            "source": "Andreya",
-            "featureType": [
-                "ElemB"
-            ],
-            "entries": [
-                "When making an attack roll, you can use a reaction to invoke the quiet chill of unknown entities. The target must make a DC15 Constitution saving throw. On a failed save, the target is frozen, suffering the {@condition paralyzed} condition. They may remake the save at the end of their turns. This burst is usable once per {@variantrule long rest}."
-            ]
-        },
-        {
-            "name": "Earth Minor",
-            "source": "Andreya",
-            "featureType": [
-                "ElemB"
-            ],
-            "entries": [
-                "When you hit a creature with a weapon or spell attack, you may use a reaction to invoke the rune of earth, conjuring a series of earthen hands to grasp the target. The attack deals an additional die of damage. In addition, the target must make a DC15 Strength saving throw or be {@condition restrained}, and must take an action to break free. This burst is usable once per {@variantrule long rest}."
-            ]
-        },
-        {
-            "name": "Stone Minor",
-            "source": "Andreya",
-            "featureType": [
-                "ElemB"
-            ],
-            "entries": [
-                "When receiving damage, you may invoke the power of the runeshapers. You are resistant to all damage until the start of your next turn. This burst is usable once per {@variantrule long rest}."
             ]
         }
     ],
