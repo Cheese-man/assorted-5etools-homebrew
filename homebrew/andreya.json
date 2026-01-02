@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "2.1.0",
+                "version": "2.2.0",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1767335110918,
+        "dateLastModified": 1767340094673,
         "edition": "one",
         "spellSchools": {
             "DM": {
@@ -662,6 +662,7 @@
                 "divination|xphb",
                 "divine word|xphb",
                 "dominate monster|xphb",
+                "dream|xphb",
                 "dream of the blue veil|tce",
                 "dust devil|xge",
                 "earth tremor|xge",
@@ -4862,6 +4863,57 @@
                 "arms of hadar|xphb",
                 "misty step|xphb",
                 "hunger of hadar|xphb"
+            ]
+        },
+        {
+            "name": "The Flames of Creation",
+            "source": "Andreya",
+            "type": "OTH",
+            "rarity": "artifact",
+            "wondrous": true,
+            "entries": [
+                "This ampoule contains a fragment of pure potential, the essence of the prismatic flame. The flame creates no heat, consumes no fuel, and it can be covered or hidden but never smothered or quenched. When uncovered, the flame can cast bright light in a 20 ft radius emanation, and dim light for a further 20 ft as per the {@spell continual flame|xphb} spell. Once per {@variantrule long rest|xphb}, when worn or carried on your person, you may choose to use your reaction to invoke one of the following flames:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Red: Burning Flame",
+                            "entry": "You may choose to replace damage from one instance of an attack or spell originating from you with fire damage. This fire damage overcomes all {@variantrule resistance|xphb}."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Green: Healing Flame",
+                            "entry": "You may choose to replace damage from one instance of an attack or spell originating from you with an equivalent amount of healing."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Purple: Inspiring Flame",
+                            "entry": "During one attack or casting of a spell originating from you, you may give any number of allies of your choice within 30ft a {@dice d4} to add to their next d20 test."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "The Quill of the Dead",
+            "source": "Andreya",
+            "type": "OTH",
+            "rarity": "very rare",
+            "wondrous": true,
+            "reqAttune": true,
+            "entries": [
+                "This quill never runs out of ink. Once per {@variantrule long rest|xphb}, while taking notes with this quill, you may cast {@spell Speak With Dead|XPHB}. When you cast the spell on the body of a creature with this quill, you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "The corpse does not need a mouth to speak with. Instead, the quill will transcribe the answers onto a notepad or other appropriate surface.",
+                        "You learn what the creature's alignment was in life.",
+                        "The corpse understands questions in all languages, regardless of what languages it knew in life. This benefit extends to creatures that did not know any languages.",
+                        "Regardless of how the creature felt about the caster in life, the corpse answers all questions as if they were an ally.",
+                        "One of the 5 questions asked can be used to ask the corpse for any piece of knowledge that died with them, to which it MUST answer truthfully, but may choose what it offers. If it cannot offer anything, the question is wasted."
+                    ]
+                }
             ]
         }
     ],
