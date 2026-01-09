@@ -7,7 +7,7 @@
                 "abbreviation": "Andreya",
                 "json": "Andreya",
                 "color": "A151CB",
-                "version": "2.2.0",
+                "version": "2.2.1",
                 "authors": [
                     "secrettoeveryon3"
                 ],
@@ -18,7 +18,7 @@
         ],
         "unlisted": true,
         "dateAdded": 1745289179923,
-        "dateLastModified": 1767340094673,
+        "dateLastModified": 1767960396538,
         "edition": "one",
         "spellSchools": {
             "DM": {
@@ -4224,7 +4224,7 @@
                 "ElemB"
             ],
             "entries": [
-                "When you cast a spell that debuffs or damages a creature, you can double the range of the spell. When doing this, the creature must make a DC15 Strength saving throw, or fall {@conditoon prone} and take PB × {@damage d6} thunder damage. They take half as much on a success. This burst is usable once per {@variantrule long rest|XPHB}."
+                "When you cast a spell that debuffs or damages a creature, you can double the range of the spell. When doing this, the creature must make a DC15 Strength saving throw, or fall {@condition prone} and take PB × {@damage d6} thunder damage. They take half as much on a success. This burst is usable once per {@variantrule long rest|XPHB}."
             ]
         },
         {
